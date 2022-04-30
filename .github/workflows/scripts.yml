@@ -1,0 +1,97 @@
+name: Scripts for hajdutetalb
+on:
+  push:
+    branches:
+      - master
+      
+env:
+  audio_url: "https://cdn.filesend.jp/private/HPIgT4TkEcRzr_hUhx5AeTqBqx76LEbiYRYxjb7QiLNDBbGNZrHe9Wy3Q7WGg_Gq/final.m4a"
+  movie_url: "https://nw2.seedr.cc/ff_get/1155658967/The.Lego.Movie.2.The.Second.Part.2019.1080p.BluRay.H264.AAC-RARBG.mp4?st=LtSWpUUVWii525EWAeAGwA&e=1651411386"
+  movie_name: "MOVIE.mp4"
+  audio_name: "AUDIO.m4a"
+  result_name: "Filmi Lego 2 - Dubluar në Shqip - FULL HD.mp4"
+  h1: 'Accept: application/json'
+  h2: "Authorization: Bearer ${{ secrets.VIDOZA_KEY }}" # vidoza
+  h3: 'cache-control: no-cache'
+  h4: "Authorization: Bearer ${{ secrets.DROPBOX_KEY }}" # dropbox
+  h5: 'Content-Type: application/octet-stream'
+  #h6: "Dropbox-API-Arg: {\"path\": \"/Pinoku.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}"
+  h7: "Dropbox-API-Arg: {\"close\": false}"
+  h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
+  h8b: "\",\"offset\": "
+  h8c: "},\"close\": false}"
+  h9: "},\"commit\": {\"path\": \"/Filmi Lego 2 - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  
+jobs:
+  start:
+    runs-on: macos-latest
+    if: "!contains(github.event.head_commit.message, 'ci skip')"
+    
+    steps:
+      - name: ffmpeg
+        uses: FedericoCarboni/setup-ffmpeg@v1
+        id: setup-ffmpeg
+        
+      - name: SSH
+        uses: mxschmitt/action-tmate@v3.11
+      
+     # - name: Install stuff
+     #   run: brew install ffmpeg
+        
+      - name: Download audio
+        run: wget -O "$audio_name" "$audio_url"
+          
+      - name: Download movie
+        run: wget -O "$movie_name" "$movie_url" #$(curl https://vidoza.net/w7vi997d6oj2.html | grep "source src" | sed -e "s/        <source src=\"\(.*\)\" type='video\/mp4'>/\1/")
+
+      # made to work for the RARBG x264 AAC version of Ratatouille
+      #- name: RAT get part 1
+      #  run: ffmpeg -ss 0 -i "$movie_name" -c copy -to 27 -avoid_negative_ts make_zero part1.ts
+      #- name: RAT get part 2
+      #  run: ffmpeg -ss 1:19.6 -i "$movie_name" -c copy -to 2:00:00 -avoid_negative_ts make_zero part2.ts
+      #- name: RAT concat
+      #  run: printf "file 'part1.ts'\nfile 'part2.ts'" > list.txt && rm "$movie_name" && ffmpeg -f concat -safe 0 -i list.txt -c copy -map_metadata -1 -movflags +faststart "$movie_name" && rm list.txt part1.ts part2.ts
+        
+      # made to work for the YTS version of Alvin and the Chipmunks meet the Wolfman
+      # - name: cut Wolfman
+      #  run: ffmpeg -ss 179.971458 -i "$movie_name" -c copy EN2.mp4 && mv EN2.mp4 "$movie_name"
+        
+      # made to work for the YTS version of Alvin and the Chipmunks meet Frankenstein
+       
+     # - name: split Frankenstein
+     #   run: mkdir plparts && ffmpeg -i "$movie_name" -sn -acodec copy -vcodec copy -copyts -start_at_zero -f segment -segment_list "plparts/out.m3u8" -segment_time 0.04 "plparts/%d.ts"
+     # - name: fixup m3u8
+     #   run: printf "#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-MEDIA-SEQUENCE:0\n#EXT-X-ALLOW-CACHE:YES\n#EXT-X-TARGETDURATION:11\n#EXTINF:4.385378,\n" > plparts/new.m3u8 && cnt=0; while read LINE; do if [ "$cnt" -gt 33 ]; then echo "$LINE" >> plparts/new.m3u8; fi; cnt=$((cnt+1)); done < plparts/out.m3u8 && ffmpeg -i plparts/14.ts -ss 6 -vcodec h264 -acodec copy plparts/14_.ts && mv plparts/14_.ts plparts/14.ts
+     # - name: merge back
+     #   run: ffmpeg -i plparts/new.m3u8 -c copy EN2.mp4 && mv EN2.mp4 "$movie_name" && rm -rf plparts
+      
+      - name: Swap audio
+        run: ffmpeg -i "$movie_name" -i "$audio_name" -vcodec copy -acodec copy -map_metadata -1 -movflags +faststart -map 0:v -map 1:a -shortest "$result_name"
+        
+      - name: Clean up
+        run: rm "$movie_name" && rm "$audio_name"
+      
+      - name: Split
+        run: split -b 140m "$result_name" segment
+        
+      - name: Start Upload
+        run: echo db_sess=$(curl -X POST https://content.dropboxapi.com/2/files/upload_session/start -H "$h4" -H "$h5" -H "$h7" | jq -r .session_id) >> $GITHUB_ENV
+        #run: echo ::set-env name=db_sess::$(curl -X POST https://content.dropboxapi.com/2/files/upload_session/start -H "$h4" -H "$h5" -H "$h7" | jq -r .session_id)
+        
+      - name: Append upload
+        run: offs="0"; for i in segment*; do curl -X POST https://content.dropboxapi.com/2/files/upload_session/append_v2 -H "$h4" -H "$h5" -H "$h8a$db_sess$h8b$offs$h8c" --data-binary @"$i"; sz=$(stat -f%z $i); ((offs+=sz)); rm $i; done;
+        
+      - name: Finish upload
+        run: offset=$(stat -f%z "$result_name"); curl -X POST https://content.dropboxapi.com/2/files/upload_session/finish -H "$h4" -H "$h5" -H "$h8a$db_sess$h8b$offset$h9"
+        
+     ## - name: Get Vidoza session
+     ##   run: echo vidoza=$(curl -X GET https://api.vidoza.net/v1/upload/http/server -H "$h1" -H "$h2" -H "$h3") >> $GITHUB_ENV
+        #run: echo ::set-env name=vidoza::$(curl -X GET https://api.vidoza.net/v1/upload/http/server -H "$h1" -H "$h2" -H "$h3")
+  
+     ## - name: Set vars
+     ##   run: echo url=$(echo $vidoza | jq -r '.data.upload_url') >> $GITHUB_ENV && echo xhr=$(echo $vidoza | jq -r '.data.upload_params.is_xhr') >> $GITHUB_ENV && echo sess=$(echo $vidoza | jq -r '.data.upload_params.sess_id') >> $GITHUB_ENV
+        #run: echo ::set-env name=url::$(echo $vidoza | jq -r '.data.upload_url') && echo ::set-env name=xhr::$(echo $vidoza | jq -r '.data.upload_params.is_xhr') && echo ::set-env name=sess::$(echo $vidoza | jq -r '.data.upload_params.sess_id')
+        
+     ## - name: Upload to Vidoza
+     ##   run: wget -O curl https://albrv.000webhostapp.com/curl && chmod 777 curl && ./curl -X POST "$url" -H "$h3" -F is_xhr="$xhr" -F sess_id="$sess" -F file=@"$result_name"
+
