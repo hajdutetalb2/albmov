@@ -21,6 +21,7 @@ env:
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
   h9: "},\"commit\": {\"path\": \"/Në kërkim të Dorit - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  GITHUB_TOKEN: ${{ github.token }}
   
 jobs:
   start:
