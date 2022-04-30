@@ -5,11 +5,11 @@ on:
       - master
       
 env:
-  audio_url: "https://cdn.filesend.jp/private/HPIgT4TkEcRzr_hUhx5AeTqBqx76LEbiYRYxjb7QiLNDBbGNZrHe9Wy3Q7WGg_Gq/final.m4a"
-  movie_url: "https://nw2.seedr.cc/ff_get/1155658967/The.Lego.Movie.2.The.Second.Part.2019.1080p.BluRay.H264.AAC-RARBG.mp4?st=LtSWpUUVWii525EWAeAGwA&e=1651411386"
+  audio_url: "https://cdn.filesend.jp/private/nE3WAlT1cmJeo7J-C3fVf_2mOKCko36Ha9GmO5Io5Se9i0Tf1iB23aekU2Ie4hCw/finaldory.m4a"
+  movie_url: "https://nw3.seedr.cc/ff_get/1155795895/Finding.Dory.2016.1080p.BluRay.H264.AAC-RARBG.mp4?st=o141fSYR8elTdFMvQ2jsQg&e=1651422596"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
-  result_name: "Filmi Lego 2 - Dubluar në Shqip - FULL HD.mp4"
+  result_name: "Në kërkim të Dorit - Dubluar në Shqip - FULL HD.mp4"
   h1: 'Accept: application/json'
   h2: "Authorization: Bearer ${{ secrets.VIDOZA_KEY }}" # vidoza
   h3: 'cache-control: no-cache'
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Filmi Lego 2 - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Në kërkim të Dorit - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   
 jobs:
   start:
@@ -32,8 +32,8 @@ jobs:
         uses: FedericoCarboni/setup-ffmpeg@v1
         id: setup-ffmpeg
         
-      - name: SSH
-        uses: mxschmitt/action-tmate@v3.11
+      #- name: SSH
+      #  uses: mxschmitt/action-tmate@v3.11
       
      # - name: Install stuff
      #   run: brew install ffmpeg
