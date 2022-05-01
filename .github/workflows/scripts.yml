@@ -45,7 +45,7 @@ jobs:
       - name: Download movie
         run: wget -O "$movie_name" "$movie_url" #$(curl https://vidoza.net/w7vi997d6oj2.html | grep "source src" | sed -e "s/        <source src=\"\(.*\)\" type='video\/mp4'>/\1/")
 
-       made to work for the RARBG x264 AAC version of Ratatouille
+       #made to work for the RARBG x264 AAC version of Ratatouille
       - name: RAT get part 1
         run: ffmpeg -ss 0 -i "$movie_name" -c copy -to 27 -avoid_negative_ts make_zero part1.ts
       - name: RAT get part 2
