@@ -5,11 +5,11 @@ on:
       - master
       
 env:
-  audio_url: "https://cdn.filesend.jp/private/nE3WAlT1cmJeo7J-C3fVf_2mOKCko36Ha9GmO5Io5Se9i0Tf1iB23aekU2Ie4hCw/finaldory.m4a"
-  movie_url: "https://nw3.seedr.cc/ff_get/1155795895/Finding.Dory.2016.1080p.BluRay.H264.AAC-RARBG.mp4?st=o141fSYR8elTdFMvQ2jsQg&e=1651422596"
+  audio_url: "https://cdn.filesend.jp/private/kORr0FpqjOD18B21Rschgb_syP00x4qYydgzsQhACtt5ChIGxJWOzL_xD2FViwg2/final.m4a"
+  movie_url: "https://de21.seedr.cc/ff_get/1155854469/Ratatouille.2007.1080p.BluRay.H264.AAC-RARBG.mp4?st=lAe9wvt6SuhTui_itsobyw&e=1651502333"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
-  result_name: "Në kërkim të Dorit - Dubluar në Shqip - FULL HD.mp4"
+  result_name: "Ratatui - Dubluar në Shqip - FULL HD.mp4"
   h1: 'Accept: application/json'
   h2: "Authorization: Bearer ${{ secrets.VIDOZA_KEY }}" # vidoza
   h3: 'cache-control: no-cache'
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Në kërkim të Dorit - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Ratatui - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
 jobs:
@@ -45,13 +45,13 @@ jobs:
       - name: Download movie
         run: wget -O "$movie_name" "$movie_url" #$(curl https://vidoza.net/w7vi997d6oj2.html | grep "source src" | sed -e "s/        <source src=\"\(.*\)\" type='video\/mp4'>/\1/")
 
-      # made to work for the RARBG x264 AAC version of Ratatouille
-      #- name: RAT get part 1
-      #  run: ffmpeg -ss 0 -i "$movie_name" -c copy -to 27 -avoid_negative_ts make_zero part1.ts
-      #- name: RAT get part 2
-      #  run: ffmpeg -ss 1:19.6 -i "$movie_name" -c copy -to 2:00:00 -avoid_negative_ts make_zero part2.ts
-      #- name: RAT concat
-      #  run: printf "file 'part1.ts'\nfile 'part2.ts'" > list.txt && rm "$movie_name" && ffmpeg -f concat -safe 0 -i list.txt -c copy -map_metadata -1 -movflags +faststart "$movie_name" && rm list.txt part1.ts part2.ts
+       made to work for the RARBG x264 AAC version of Ratatouille
+      - name: RAT get part 1
+        run: ffmpeg -ss 0 -i "$movie_name" -c copy -to 27 -avoid_negative_ts make_zero part1.ts
+      - name: RAT get part 2
+        run: ffmpeg -ss 1:19.6 -i "$movie_name" -c copy -avoid_negative_ts make_zero part2.ts
+      - name: RAT concat
+        run: printf "file 'part1.ts'\nfile 'part2.ts'" > list.txt && rm "$movie_name" && ffmpeg -f concat -safe 0 -i list.txt -c copy -map_metadata -1 -movflags +faststart "$movie_name" && rm list.txt part1.ts part2.ts
         
       # made to work for the YTS version of Alvin and the Chipmunks meet the Wolfman
       # - name: cut Wolfman
