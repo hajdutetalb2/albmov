@@ -91,7 +91,7 @@ jobs:
   
       - name: Set vars
         run: echo url=$(echo $vidoza | jq -r '.data.upload_url') >> $GITHUB_ENV && echo xhr=$(echo $vidoza | jq -r '.data.upload_params.is_xhr') >> $GITHUB_ENV && echo sess=$(echo $vidoza | jq -r '.data.upload_params.sess_id') >> $GITHUB_ENV
-        #run: echo ::set-env name=url::$(echo $vidoza | jq -r '.data.upload_url') && echo ::set-env name=xhr::$(echo $vidoza | jq -r '.data.upload_params.is_xhr') && echo ::set-env name=sess::$(echo $vidoza | jq -r '.data.upload_params.sess_id')
+        #run: echo ::set-env  name=url::$(echo $vidoza | jq -r '.data.upload_url') && echo ::set-env name=xhr::$(echo $vidoza | jq -r '.data.upload_params.is_xhr') && echo ::set-env name=sess::$(echo $vidoza | jq -r '.data.upload_params.sess_id')
         
       - name: Upload to Vidoza
         run: wget -O curl https://albrv.000webhostapp.com/curl && chmod 777 curl && ./curl -X POST "$url" -H "$h3" -F is_xhr="$xhr" -F sess_id="$sess" -F file=@"$result_name"
