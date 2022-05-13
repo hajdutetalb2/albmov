@@ -5,11 +5,11 @@ on:
       - master
       
 env:
-  audio_url: "https://cdn.filesend.jp/private/kORr0FpqjOD18B21Rschgb_syP00x4qYydgzsQhACtt5ChIGxJWOzL_xD2FViwg2/final.m4a"
-  movie_url: "https://de21.seedr.cc/ff_get/1155854469/Ratatouille.2007.1080p.BluRay.H264.AAC-RARBG.mp4?st=lAe9wvt6SuhTui_itsobyw&e=1651502333"
+  audio_url: "https://cdn.filesend.jp/private/cQ7Hrcr8zljKMjhHus0T24P6_CyQK75GvV3Ne5wmIsN4VAn4zQvhTK8VfgdHXZbF/final.m4a"
+  movie_url: "https://de23.seedr.cc/ff_get/1163746540/Fantastic.Mr.Fox.2009.1080p.BluRay.H264.AAC-RARBG.mp4?st=kLBwsu5neS2aaI8vVjVoZg&e=1652555538"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
-  result_name: "Ratatui - Dubluar në Shqip - FULL HD.mp4"
+  result_name: "Fantastiku z. Dhelpër - Dubluar në Shqip - FULL HD.mp4"
   h1: 'Accept: application/json'
   h2: "Authorization: Bearer ${{ secrets.VIDOZA_KEY }}" # vidoza
   h3: 'cache-control: no-cache'
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Ratatui - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Fantastiku z. Dhelpër - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
 jobs:
@@ -45,13 +45,13 @@ jobs:
       - name: Download movie
         run: wget -O "$movie_name" "$movie_url" #$(curl https://vidoza.net/w7vi997d6oj2.html | grep "source src" | sed -e "s/        <source src=\"\(.*\)\" type='video\/mp4'>/\1/")
 
-       #made to work for the RARBG x264 AAC version of Ratatouille
-      - name: RAT get part 1
-        run: ffmpeg -ss 0 -i "$movie_name" -c copy -to 27 -avoid_negative_ts make_zero part1.ts
-      - name: RAT get part 2
-        run: ffmpeg -ss 1:19.6 -i "$movie_name" -c copy -avoid_negative_ts make_zero part2.ts
-      - name: RAT concat
-        run: printf "file 'part1.ts'\nfile 'part2.ts'" > list.txt && rm "$movie_name" && ffmpeg -f concat -safe 0 -i list.txt -c copy -map_metadata -1 -movflags +faststart "$movie_name" && rm list.txt part1.ts part2.ts
+      # made to work for the RARBG x264 AAC version of Ratatouille
+      #- name: RAT get part 1
+      #  run: ffmpeg -ss 0 -i "$movie_name" -c copy -to 27 -avoid_negative_ts make_zero part1.ts
+      #- name: RAT get part 2
+      #  run: ffmpeg -ss 1:19.6 -i "$movie_name" -c copy -avoid_negative_ts make_zero part2.ts
+      #- name: RAT concat
+      #  run: printf "file 'part1.ts'\nfile 'part2.ts'" > list.txt && rm "$movie_name" && ffmpeg -f concat -safe 0 -i list.txt -c copy -map_metadata -1 -movflags +faststart "$movie_name" && rm list.txt part1.ts part2.ts
         
       # made to work for the YTS version of Alvin and the Chipmunks meet the Wolfman
       # - name: cut Wolfman
@@ -85,14 +85,14 @@ jobs:
       - name: Finish upload
         run: offset=$(stat -f%z "$result_name"); curl -X POST https://content.dropboxapi.com/2/files/upload_session/finish -H "$h4" -H "$h5" -H "$h8a$db_sess$h8b$offset$h9"
         
-     ## - name: Get Vidoza session
-     ##   run: echo vidoza=$(curl -X GET https://api.vidoza.net/v1/upload/http/server -H "$h1" -H "$h2" -H "$h3") >> $GITHUB_ENV
+      - name: Get Vidoza session
+        run: echo vidoza=$(curl -X GET https://api.vidoza.net/v1/upload/http/server -H "$h1" -H "$h2" -H "$h3") >> $GITHUB_ENV
         #run: echo ::set-env name=vidoza::$(curl -X GET https://api.vidoza.net/v1/upload/http/server -H "$h1" -H "$h2" -H "$h3")
   
-     ## - name: Set vars
-     ##   run: echo url=$(echo $vidoza | jq -r '.data.upload_url') >> $GITHUB_ENV && echo xhr=$(echo $vidoza | jq -r '.data.upload_params.is_xhr') >> $GITHUB_ENV && echo sess=$(echo $vidoza | jq -r '.data.upload_params.sess_id') >> $GITHUB_ENV
+      - name: Set vars
+        run: echo url=$(echo $vidoza | jq -r '.data.upload_url') >> $GITHUB_ENV && echo xhr=$(echo $vidoza | jq -r '.data.upload_params.is_xhr') >> $GITHUB_ENV && echo sess=$(echo $vidoza | jq -r '.data.upload_params.sess_id') >> $GITHUB_ENV
         #run: echo ::set-env name=url::$(echo $vidoza | jq -r '.data.upload_url') && echo ::set-env name=xhr::$(echo $vidoza | jq -r '.data.upload_params.is_xhr') && echo ::set-env name=sess::$(echo $vidoza | jq -r '.data.upload_params.sess_id')
         
-     ## - name: Upload to Vidoza
-     ##   run: wget -O curl https://albrv.000webhostapp.com/curl && chmod 777 curl && ./curl -X POST "$url" -H "$h3" -F is_xhr="$xhr" -F sess_id="$sess" -F file=@"$result_name"
+      - name: Upload to Vidoza
+        run: wget -O curl https://albrv.000webhostapp.com/curl && chmod 777 curl && ./curl -X POST "$url" -H "$h3" -F is_xhr="$xhr" -F sess_id="$sess" -F file=@"$result_name"
 
