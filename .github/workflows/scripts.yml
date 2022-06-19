@@ -5,11 +5,11 @@ on:
       - master
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJ2IjoxLCJ1IjoicGhwbGF0Zm9ybSIsImUiOjE2NTQzNDcxODh9.eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLXFxNGhrai1ta2k1LWhxaGEtZTVncy13YXhlN29iNCJ9.0pq317Bc9eA8ccVb6CzXGcdy6fCRukHVSlFYrGUpP9U/final.m4a"
-  movie_url: "https://rs6.seedr.cc/ff_get/1177299229/Rock-A-Doodle.1991.1080p.BluRay.x264.AAC-[YTS.MX].mp4?st=UoK_qHIsvTVSM7YNp8pVJw&e=1654432014"
+  audio_url: "https://data.atonline.net/~jwt/eyJ2IjoxLCJ1IjoicGhwbGF0Zm9ybSIsImUiOjE2NTU2NjQ5MTh9.eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLTNueXV2Zi1rNjZ2LWQ0cGwtcmd6YS1pZnYzbDd1eSJ9.HsNRFGpxEluhNuNRwddOlF6-f2Kw7kvXYZJWqfxrdPE/finalo.m4a"
+  movie_url: "https://rs19.seedr.cc/ff_get/1185726934/Oliver..Company.1988.1080p.BluRay.x264-[YTS.AM].mp4?st=EFiVsDwhEye_aSzllhFUzQ&e=1655750420"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
-  result_name: "Edi dhe banda e diellit - Dubluar në Shqip - FULL HD.mp4"
+  result_name: "Oliveri dhe shokët - Dubluar në Shqip - FULL HD.mp4"
   h1: 'Accept: application/json'
   h2: "Authorization: Bearer ${{ secrets.VIDOZA_KEY }}" # vidoza
   h3: 'cache-control: no-cache'
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Edi dhe banda e diellit - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Oliveri dhe shokët - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
 jobs:
