@@ -5,11 +5,11 @@ on:
       - master
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLTd5empndy1xZnQ1LWJvYmEtZmVvNi1jZWtqNXBnNCJ9/final.m4a?v=1&u=phplatform&e=1656701130&s=fff5CMdgPcldBq-mSir557cc1oDvurHWr4gdocO0WJA"
-  movie_url: "https://de23.seedr.cc/ff_get/1194913735/An.Extremely.Goofy.Movie.2000.1080p.BluRay.x264-[YTS.AM].mp4?st=JlTVakqO6zdL1gCpiz11AA&e=1656785698"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWtpa3poeC15cDJiLWJmdmktZDU0aC1kZnR4ZG5neSJ9/final.m4a?v=1&u=phplatform&e=1656923875&s=slRklYLGOuhNHoZg8CU29sN_KZLmKYFeNagPx6IxUwA"
+  movie_url: "https://rs1.seedr.cc/ff_get/1195381855/Madagascar.Escape.2.Africa.2008.1080p.BluRay.H264.AAC-RARBG.mp4?st=yqF182DzjFCNuJFR3Ix7-A&e=1657008528"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
-  result_name: "Një film ekstremisht shumë Gufi - Dubluar në Shqip - FULL HD.mp4"
+  result_name: "Madagaskar 2: Arratisje në Afrikë - Dubluar në Shqip (Dublimi Jess) - FULL HD.mp4"
   h1: 'Accept: application/json'
   h2: "Authorization: Bearer ${{ secrets.VIDOZA_KEY }}" # vidoza
   h3: 'cache-control: no-cache'
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Një film ekstremisht shumë Gufi - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Madagaskar 2: Arratisje në Afrikë - Dubluar në Shqip (Dublimi Jess) - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
 jobs:
