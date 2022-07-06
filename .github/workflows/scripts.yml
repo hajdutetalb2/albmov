@@ -5,8 +5,8 @@ on:
       - master
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWJtbHRwcC1yNmZqLWNmZmstdmo3cC10b2d1M2s2eSJ9/final.m4a?v=1&u=phplatform&e=1657045283&s=C5Zbuvx7Sr1DwYyIcWVcdwUG1GThV8D6OiLyYX4ZBHw"
-  movie_url: "https://nw15.seedr.cc/ff_get/1197203490/An.American.Tail.Fievel.Goes.West.1991.1080p.BluRay.H264.AAC-RARBG.mp4?st=2HMPr5ClJEQseT9Ajw3ZTA&e=1657129899"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWZ1bHM1cC1rNzNmLWM0anAtZGZ2ay1wM250dG1sZSJ9/final.m4a?v=1&u=phplatform&e=1657119945&s=JYFLy5fnV6PWbBCn3cpeXOHN-Gl5ih0QRYKOQrfo_iI"
+  movie_url: "https://de25.seedr.cc/ff_get/1197745662/MrPeabody.and.Sherman.2014.1080p.BluRay.x264.YIFY.mp4?st=ZVdq3ZskcvNGmgHLs17zvw&e=1657204811"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Një përrallë amerikane: Fajvëll shkon në perëndim - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Zoti Pibadi dhe Sherman - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
 jobs:
