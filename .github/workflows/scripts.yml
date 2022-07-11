@@ -5,8 +5,8 @@ on:
       - master
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLXFveDdnaC1kNzc1LWU3eGgtcXl1eS1icHJ0cGd1eSJ9/final.m4a?v=1&u=phplatform&e=1657201468&s=tNkHb-btERV9ohBN0gchX-WDb_xThNsNP1A-OzPPfdE"
-  movie_url: "https://rs4.seedr.cc/ff_get/1198387841/Horton.Hears.A.Who.2008.1080p.BluRay.H264.AAC-RARBG.mp4?st=y4jPuokaSjOKtL1NTzFsJg&e=1657287079"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLXp0Zm94di1tM3R6LWhuM20tM2lhcy1lbDNvdmEzeSJ9/final.m4a?v=1&u=phplatform&e=1657557446&s=VBEC7VdNYi7OIy7W-5T4thBZIfKLbIhUQq811BqE1jU"
+  movie_url: "https://rs19.seedr.cc/ff_get/1200583945/The.Many.Adventures.of.Winnie.the.Pooh.1977.1080p.BluRay.H264.AAC-RARBG.mp4?st=lP4gE3UyoFY8SU2CCfRIdw&e=1657641126"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Elefanti Horton dhe njerëzit e vegjël - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Aventurat e shumta të Uini Puh - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
 jobs:
