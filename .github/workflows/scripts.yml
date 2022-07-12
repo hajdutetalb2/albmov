@@ -5,8 +5,8 @@ on:
       - master
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLXp0Zm94di1tM3R6LWhuM20tM2lhcy1lbDNvdmEzeSJ9/final.m4a?v=1&u=phplatform&e=1657557446&s=VBEC7VdNYi7OIy7W-5T4thBZIfKLbIhUQq811BqE1jU"
-  movie_url: "https://rs19.seedr.cc/ff_get/1200583945/The.Many.Adventures.of.Winnie.the.Pooh.1977.1080p.BluRay.H264.AAC-RARBG.mp4?st=lP4gE3UyoFY8SU2CCfRIdw&e=1657641126"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWo2eWYzYS0zM2tiLWJtaGctb25iaC1uNWlmdXd6NCJ9/final.m4a?v=1&u=phplatform&e=1657625470&s=kB0VRLS9Aph9oaDO5Fk25mq8K2LBxksz4zsd2B8BBMI"
+  movie_url: "https://uc8721191514f2bfcab23ffa1d6b.dl.dropboxusercontent.com/cd/0/get/Bo4DbM729dYnBc6ZgPN8s1mq3DKcJyyUHYBdX_0Z9Fe6f_nMdIXFmoaHWiz9d8tLlYVIz-KkLLyIHvTyISpw1UG698oRop4LFTAhgwhFhyEB-xnxpqowPsg0SPEDrXPxMnfJTEQQ-P5TBAeXE7cgxrR9YgpgrT5SZmjAfXtfnMtwNUGNKLTwqdnfSCbxCU8Vbno/file"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Aventurat e shumta të Uini Puh - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Madagaskar 2: Aventura në Afrikë - Dubluar në Shqip (Dublimi Onix) - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
 jobs:
@@ -85,14 +85,14 @@ jobs:
       - name: Finish upload
         run: offset=$(stat -f%z "$result_name"); curl -X POST https://content.dropboxapi.com/2/files/upload_session/finish -H "$h4" -H "$h5" -H "$h8a$db_sess$h8b$offset$h9"
         
-      ##- name: Get Vidoza session
-      ##  run: echo vidoza=$(curl -X GET https://api.vidoza.net/v1/upload/http/server -H "$h1" -H "$h2" -H "$h3") >> $GITHUB_ENV
+      - name: Get Vidoza session
+        run: echo vidoza=$(curl -X GET https://api.vidoza.net/v1/upload/http/server -H "$h1" -H "$h2" -H "$h3") >> $GITHUB_ENV
         #run: echo ::set-env name=vidoza::$(curl -X GET https://api.vidoza.net/v1/upload/http/server -H "$h1" -H "$h2" -H "$h3")
   
-      ##- name: Set vars
-      ##  run: echo url=$(echo $vidoza | jq -r '.data.upload_url') >> $GITHUB_ENV && echo xhr=$(echo $vidoza | jq -r '.data.upload_params.is_xhr') >> $GITHUB_ENV && echo sess=$(echo $vidoza | jq -r '.data.upload_params.sess_id') >> $GITHUB_ENV
+      - name: Set vars
+        run: echo url=$(echo $vidoza | jq -r '.data.upload_url') >> $GITHUB_ENV && echo xhr=$(echo $vidoza | jq -r '.data.upload_params.is_xhr') >> $GITHUB_ENV && echo sess=$(echo $vidoza | jq -r '.data.upload_params.sess_id') >> $GITHUB_ENV
         #run: echo ::set-env name=url::$(echo $vidoza | jq -r '.data.upload_url') && echo ::set-env name=xhr::$(echo $vidoza | jq -r '.data.upload_params.is_xhr') && echo ::set-env name=sess::$(echo $vidoza | jq -r '.data.upload_params.sess_id')
         
-      ##- name: Upload to Vidoza
-      ##  run: wget -O curl https://albrv.000webhostapp.com/curl && chmod 777 curl && ./curl -X POST "$url" -H "$h3" -F is_xhr="$xhr" -F sess_id="$sess" -F file=@"$result_name"
+      - name: Upload to Vidoza
+        run: wget -O curl https://albrv.000webhostapp.com/curl && chmod 777 curl && ./curl -X POST "$url" -H "$h3" -F is_xhr="$xhr" -F sess_id="$sess" -F file=@"$result_name"
 
