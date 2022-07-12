@@ -6,7 +6,7 @@ on:
       
 env:
   audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWo2eWYzYS0zM2tiLWJtaGctb25iaC1uNWlmdXd6NCJ9/final.m4a?v=1&u=phplatform&e=1657625470&s=kB0VRLS9Aph9oaDO5Fk25mq8K2LBxksz4zsd2B8BBMI"
-  movie_url: "https://uc8721191514f2bfcab23ffa1d6b.dl.dropboxusercontent.com/cd/0/get/Bo4DbM729dYnBc6ZgPN8s1mq3DKcJyyUHYBdX_0Z9Fe6f_nMdIXFmoaHWiz9d8tLlYVIz-KkLLyIHvTyISpw1UG698oRop4LFTAhgwhFhyEB-xnxpqowPsg0SPEDrXPxMnfJTEQQ-P5TBAeXE7cgxrR9YgpgrT5SZmjAfXtfnMtwNUGNKLTwqdnfSCbxCU8Vbno/file"
+  movie_url: "https://uc10e8e42c531cdb383ae254f92e.dl.dropboxusercontent.com/cd/0/get/Bo7TwtTDaVAzx47wm9DOobrWvcyPSsJ4QYLT42jmwXWpwshYXgdvoqF94_cvIrGDaz7fl26Vk-bYc--e8iVK6ZHBhoULStGc24qGE_t6ebGIEHtLOuu7h_tvnT6njvuNUpb-nKMUpSfnniLvVLxQr2XKl3zzfVeGWp_URkjmFo66OS6y8IL2Vv_nJ9Y1OcjS-M0/file"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
