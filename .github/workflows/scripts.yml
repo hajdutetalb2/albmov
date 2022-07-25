@@ -5,8 +5,8 @@ on:
       - master
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWc1bjJyZS0zdXA1LWVidGstaTM2aS11emh5bXRlZSJ9/final.m4a?v=1&u=phplatform&e=1657799595&s=WuH9MIPbYSvHD9cQridEctGzm7npJVTzyHyB4eTtKIY"
-  movie_url: "https://rs1.seedr.cc/ff_get/1202553303/King.Tweety.2022.1080p.WEBRip.x264-RARBG.mp4?st=HwztoatQnmkkTgZWckbnhQ&e=1657883439"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLW53enMyay12ZW9yLWVpcmotNTV4aS01cHYzcm1ubSJ9/final_pony.m4a?v=1&u=phplatform&e=1658762415&s=BDN_RXI4f6AvcucUdZxGdobjFtKjRunf1WiJf-mUVE4"
+  movie_url: "https://nw9.seedr.cc/ff_get/1210430041/My.Little.Pony.A.New.Generation.2021.PROPER.1080p.WEBRip.x264-RARBG.mp4?st=1Ij-pWTzFHZmU7EG1QbeUQ&e=1658847026"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Mbreti Tuiti - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/My Little Pony: Një gjeneratë e re - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
 jobs:
