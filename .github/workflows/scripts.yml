@@ -5,7 +5,7 @@ on:
       - master
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLXAyeHh6Yy1tbzdyLWV1bmktYjVoaS1haXJueHVoNCJ9/final_pony.m4a?v=1&u=phplatform&e=1658772691&s=7iZ3Zad8hR2IkgP-PlGF-pTGJp4y9OZQM4vnDCyVi7g"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLXVseHJ6cS11d2F6LWVieGYtNzVtYy15ZWdubXg3aSJ9/audio.m4a?v=1&u=phplatform&e=1659018750&s=AQVmkjIFssIqI-nzD1S6PCqTeMdi92eJ4taR9jmg5sI"
   movie_url: "https://nw9.seedr.cc/ff_get/1210430041/My.Little.Pony.A.New.Generation.2021.PROPER.1080p.WEBRip.x264-RARBG.mp4?st=EMplVOdqY9Oz8KXks_53jQ&e=1658857781"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
@@ -46,14 +46,14 @@ jobs:
         run: wget -O mp4 'http://catchup-tv.herokuapp.com/mp4decrypt' && chmod 777 mp4
 
       - name: Download audio
-        run: ./ytdlp --allow-u -f f4-a1-x3 'https://digitalb-vod.morescreens.com/cenc_vod_dash/M_My_Little_Pony_A_New_Generation_,480p,576p,720p,1080p,.mp4.urlset/manifest.mpd?id=empty&video_id=12488&token=b52ea995905e05a6af8638eec07f7e9fccb28d60&authority_instance_id=spectar-prd-digitalb'
-        #run: wget -O "$audio_name" "$audio_url"
+        #run: ./ytdlp --allow-u -f f4-a1-x3 'https://digitalb-vod.morescreens.com/cenc_vod_dash/M_My_Little_Pony_A_New_Generation_,480p,576p,720p,1080p,.mp4.urlset/manifest.mpd?id=empty&video_id=12488&token=b52ea995905e05a6af8638eec07f7e9fccb28d60&authority_instance_id=spectar-prd-digitalb'
+        run: wget -O "$audio_name" "$audio_url"
     
-      - name: decrypt
-        run: ./mp4 --key e9c4370095004713baaff297322d9529:50372100d7a90ddc4766920450ea3bdb 'manifest [manifest].m4a' "$audio_name" && rm 'manifest [manifest].m4a'
+      #- name: decrypt
+      #  run: ./mp4 --key e9c4370095004713baaff297322d9529:50372100d7a90ddc4766920450ea3bdb 'manifest [manifest].m4a' "$audio_name" && rm 'manifest [manifest].m4a'
         
       - name: Download movie
-        run: ./ytdlp --allow-u -f f4-v1-x3 'https://digitalb-vod.morescreens.com/cenc_vod_dash/M_My_Little_Pony_A_New_Generation_,480p,576p,720p,1080p,.mp4.urlset/manifest.mpd?id=empty&video_id=12488&token=b52ea995905e05a6af8638eec07f7e9fccb28d60&authority_instance_id=spectar-prd-digitalb'
+        run: ./ytdlp --allow-u -f f3-v1-x3 'https://digitalb-vod.morescreens.com/cenc_vod_dash/M_My_Little_Pony_A_New_Generation_,480p,576p,720p,1080p,.mp4.urlset/manifest.mpd?id=empty&video_id=12488&token=b52ea995905e05a6af8638eec07f7e9fccb28d60&authority_instance_id=spectar-prd-digitalb'
         
       - name: decrypt
         run: ./mp4 --key e9c4370095004713baaff297322d9529:50372100d7a90ddc4766920450ea3bdb 'manifest [manifest].mp4' "$movie_name"
