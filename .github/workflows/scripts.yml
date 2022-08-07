@@ -5,8 +5,8 @@ on:
       - master
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLXVseHJ6cS11d2F6LWVieGYtNzVtYy15ZWdubXg3aSJ9/audio.m4a?v=1&u=phplatform&e=1659018750&s=AQVmkjIFssIqI-nzD1S6PCqTeMdi92eJ4taR9jmg5sI"
-  movie_url: "https://nw9.seedr.cc/ff_get/1210430041/My.Little.Pony.A.New.Generation.2021.PROPER.1080p.WEBRip.x264-RARBG.mp4?st=EMplVOdqY9Oz8KXks_53jQ&e=1658857781"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWRhZDY1ay0yc3J6LWJiYmUtNjVwNy1udDdmc2toeSJ9/final.m4a?v=1&u=phplatform&e=1659881582&s=hRQ-fapjtjVd6OF3R4VJLl1pLK61s76KijsFTtdM0vs"
+  movie_url: "https://nw12.seedr.cc/ff_get/1218220775/The.Pebble.and.the.Penguin.1995.1080p.BluRay.H264.AAC-RARBG.mp4?st=H7H1K6C99npk2P9PH8loYQ&e=1659966153"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Poni im i vogël: Gjenerata e re - Dubluar në Shqip (Dublimi Suprem) - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Pinguini dhe guraleci - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
 jobs:
