@@ -39,11 +39,11 @@ jobs:
      # - name: Install stuff
      #   run: brew install ffmpeg
         
-      - name: ytdlp
-        run: wget -O ytdlp 'https://github.com/yt-dlp/yt-dlp/releases/download/2022.07.18/yt-dlp_macos' && chmod 777 ytdlp
+      #- name: ytdlp
+      #  run: wget -O ytdlp 'https://github.com/yt-dlp/yt-dlp/releases/download/2022.07.18/yt-dlp_macos' && chmod 777 ytdlp
 
-      - name: mp4decrypt
-        run: wget -O mp4 'http://catchup-tv.herokuapp.com/mp4decrypt' && chmod 777 mp4
+      #- name: mp4decrypt
+      #  run: wget -O mp4 'http://catchup-tv.herokuapp.com/mp4decrypt' && chmod 777 mp4
 
       - name: Download audio
         #run: ./ytdlp --allow-u -f f4-a1-x3 'https://digitalb-vod.morescreens.com/cenc_vod_dash/M_My_Little_Pony_A_New_Generation_,480p,576p,720p,1080p,.mp4.urlset/manifest.mpd?id=empty&video_id=12488&token=b52ea995905e05a6af8638eec07f7e9fccb28d60&authority_instance_id=spectar-prd-digitalb'
@@ -53,11 +53,12 @@ jobs:
       #  run: ./mp4 --key e9c4370095004713baaff297322d9529:50372100d7a90ddc4766920450ea3bdb 'manifest [manifest].m4a' "$audio_name" && rm 'manifest [manifest].m4a'
         
       - name: Download movie
-        run: ./ytdlp --allow-u -f f3-v1-x3 'https://digitalb-vod.morescreens.com/cenc_vod_dash/M_My_Little_Pony_A_New_Generation_,480p,576p,720p,1080p,.mp4.urlset/manifest.mpd?id=empty&video_id=12488&token=b52ea995905e05a6af8638eec07f7e9fccb28d60&authority_instance_id=spectar-prd-digitalb'
+        #run: ./ytdlp --allow-u -f f3-v1-x3 'https://digitalb-vod.morescreens.com/cenc_vod_dash/M_My_Little_Pony_A_New_Generation_,480p,576p,720p,1080p,.mp4.urlset/manifest.mpd?id=empty&video_id=12488&token=b52ea995905e05a6af8638eec07f7e9fccb28d60&authority_instance_id=spectar-prd-digitalb'
+        run: wget -O "$movie_name" "$movie_url" #$(curl https://vidoza.net/w7vi997d6oj2.html | grep "source src" | sed -e "s/        <source src=\"\(.*\)\" type='video\/mp4'>/\1/")
         
-      - name: decrypt
-        run: ./mp4 --key e9c4370095004713baaff297322d9529:50372100d7a90ddc4766920450ea3bdb 'manifest [manifest].mp4' "$movie_name"
-        #run: wget -O "$movie_name" "$movie_url" #$(curl https://vidoza.net/w7vi997d6oj2.html | grep "source src" | sed -e "s/        <source src=\"\(.*\)\" type='video\/mp4'>/\1/")
+      #- name: decrypt
+      #  run: ./mp4 --key e9c4370095004713baaff297322d9529:50372100d7a90ddc4766920450ea3bdb 'manifest [manifest].mp4' "$movie_name"
+        
 
       # made to work for the RARBG x264 AAC version of Ratatouille
       #- name: RAT get part 1
