@@ -2,7 +2,7 @@ name: Scripts for hajdutetalb
 on:
   push:
     branches:
-      - master
+      - main
       
 env:
   audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWRhZDY1ay0yc3J6LWJiYmUtNjVwNy1udDdmc2toeSJ9/final.m4a?v=1&u=phplatform&e=1659881582&s=hRQ-fapjtjVd6OF3R4VJLl1pLK61s76KijsFTtdM0vs"
