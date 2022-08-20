@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWNzZWh4ci02cmpuLWRpZmItN3Q3dS1jN25nd3l5NCJ9/final.m4a?v=1&u=phplatform&e=1660127124&s=awZUDLIH3r1FSnMzBbgq99JPT2zIgnScHAtCtxrq7Ys"
-  movie_url: "https://rs15.seedr.cc/ff_get/1219462071/The.Secret.of.NIMH.1982.1080p.BluRay.H264.AAC-RARBG.mp4?st=IQpJ-MnNr0gOTmIH_s75DQ&e=1660211802"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWVwcXJ6Yi14bWhiLWNzM3AtcTNodi1pcnVuNHl2ZSJ9/final.m4a?v=1&u=phplatform&e=1661017768&s=x0Z3VkDC5wraWNHWYjO8swMtNRFeweAHQ_KXbxFKPfQ"
+  movie_url: "https://rs16.seedr.cc/ff_get/1232566919/Charlottes.Web.1973.1080p.WEBRip.x264-RARBG.mp4?st=3zxV2IU8OhsQ-Qo1ZIfahg&e=1661103163"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Sekretet e Nimit - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Rrjeta e Sharlotës - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
 jobs:
