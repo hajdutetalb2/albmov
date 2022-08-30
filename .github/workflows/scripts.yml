@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLTJvdWs3Zi1uM3l2LWVmbGkta291bS11NmlvdWJtYSJ9/final.m4a?v=1&u=phplatform&e=1661181127&s=izCJvcvP0FBTFFeD_mbV-ZNl3IwsKNF3FA86M6KYuXc"
-  movie_url: "https://rs5.seedr.cc/ff_get/1234003330/FernGully.The.Last.Rainforest.1992.1080p.BluRay.H264.AAC-RARBG.mp4?st=qZcmiJIb1gyLxTm8yM-YVg&e=1661265876"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLTVpNDRmNS1kNTNqLWJlemQtbnU1My1hbWRpZGVlZSJ9/final.m4a?v=1&u=phplatform&e=1661859117&s=4jWR4xIBz2TAs8yuNd4nRXsOTQtk7jLOV_Jn_VbykVY"
+  movie_url: "https://rs6.seedr.cc/ff_get/1240149615/Once.Upon.A.Forest.1993.1080p.WEBRip.x264-RARBG.mp4?st=ksBwdcLoNQ8W8xem_BcYNQ&e=1661943798"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Fern Gali - Aventurat e Zakut dhe Kristës - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Na ishte një herë një pyll - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
 jobs:
