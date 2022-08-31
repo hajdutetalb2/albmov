@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWZnZHBkdi1keGduLWNpdmwtNHlhMy00Y2Qycm1ibSJ9/final.m4a?v=1&u=phplatform&e=1661939154&s=Mkg7Y60XAGUgGBRaLRLPNgNjO4ujS8z2vvuVDVId5ts"
-  movie_url: "https://rs4.seedr.cc/ff_get/1240743776/The.Bad.Guys.2022.1080p.BluRay.H264.AAC-RARBG.mp4?st=yOrcRe25PItRm9j-9yoSXw&e=1662028499"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWZnZHBkdi1keGduLWNpdmwtNHlhMy00Y2Qycm1ibSJ9/final.m4a?v=1&u=phplatform&e=1661944327&s=xWOxcwUKVjEGijACPwMZlORKSVuEqzBi87oUgxXquLY"
+  movie_url: "https://uca27186745c571b7600571016ef.dl.dropboxusercontent.com/cd/0/get/BsDjozQ0QKtMPMfQ9AAocuywao3VGR_ftE1OEKulsXlIzuzJ_LGOzyY6oG1hwJblyV9Nn38QUJB3Fx7lVfQ8qKo4olRCbxzdo4I3MV0M6-nN4_ps68u9v9s5j3opLXyOF2Bj8fw790QhRMUVz-IhIy1HhB-uAvgaxRdMjR5BmZRp-3WthtrBBOirKPbHdlkl9ss/file"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
