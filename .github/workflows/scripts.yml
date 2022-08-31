@@ -6,7 +6,7 @@ on:
       
 env:
   audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWZnZHBkdi1keGduLWNpdmwtNHlhMy00Y2Qycm1ibSJ9/final.m4a?v=1&u=phplatform&e=1661939154&s=Mkg7Y60XAGUgGBRaLRLPNgNjO4ujS8z2vvuVDVId5ts"
-  movie_url: "https://rs4.seedr.cc/ff_get/1240203370/The.Bad.Guys.2022.1080p.BluRay.H264.AAC-RARBG.mp4?st=1MPI3hMR7IvfyuGZxLBIRw&e=1662024152"
+  movie_url: "https://rs4.seedr.cc/ff_get/1240743776/The.Bad.Guys.2022.1080p.BluRay.H264.AAC-RARBG.mp4?st=5ybT1wDMd5-YAKhWIpoUxw&e=1662027820"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -45,6 +45,10 @@ jobs:
       #- name: mp4decrypt
       #  run: wget -O mp4 'http://catchup-tv.herokuapp.com/mp4decrypt' && chmod 777 mp4
 
+      - name: Download movie
+        #run: ./ytdlp --allow-u -f f3-v1-x3 'https://digitalb-vod.morescreens.com/cenc_vod_dash/M_My_Little_Pony_A_New_Generation_,480p,576p,720p,1080p,.mp4.urlset/manifest.mpd?id=empty&video_id=12488&token=b52ea995905e05a6af8638eec07f7e9fccb28d60&authority_instance_id=spectar-prd-digitalb'
+        run: wget -O "$movie_name" "$movie_url" #$(curl https://vidoza.net/w7vi997d6oj2.html | grep "source src" | sed -e "s/        <source src=\"\(.*\)\" type='video\/mp4'>/\1/")
+        
       - name: Download audio
         #run: ./ytdlp --allow-u -f f4-a1-x3 'https://digitalb-vod.morescreens.com/cenc_vod_dash/M_My_Little_Pony_A_New_Generation_,480p,576p,720p,1080p,.mp4.urlset/manifest.mpd?id=empty&video_id=12488&token=b52ea995905e05a6af8638eec07f7e9fccb28d60&authority_instance_id=spectar-prd-digitalb'
         run: wget -O "$audio_name" "$audio_url"
@@ -52,9 +56,7 @@ jobs:
       #- name: decrypt
       #  run: ./mp4 --key e9c4370095004713baaff297322d9529:50372100d7a90ddc4766920450ea3bdb 'manifest [manifest].m4a' "$audio_name" && rm 'manifest [manifest].m4a'
         
-      - name: Download movie
-        #run: ./ytdlp --allow-u -f f3-v1-x3 'https://digitalb-vod.morescreens.com/cenc_vod_dash/M_My_Little_Pony_A_New_Generation_,480p,576p,720p,1080p,.mp4.urlset/manifest.mpd?id=empty&video_id=12488&token=b52ea995905e05a6af8638eec07f7e9fccb28d60&authority_instance_id=spectar-prd-digitalb'
-        run: wget -O "$movie_name" "$movie_url" #$(curl https://vidoza.net/w7vi997d6oj2.html | grep "source src" | sed -e "s/        <source src=\"\(.*\)\" type='video\/mp4'>/\1/")
+
         
       #- name: decrypt
       #  run: ./mp4 --key e9c4370095004713baaff297322d9529:50372100d7a90ddc4766920450ea3bdb 'manifest [manifest].mp4' "$movie_name"
