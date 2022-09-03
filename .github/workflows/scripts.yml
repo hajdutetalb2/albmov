@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWZnZHBkdi1keGduLWNpdmwtNHlhMy00Y2Qycm1ibSJ9/final.m4a?v=1&u=phplatform&e=1661944327&s=xWOxcwUKVjEGijACPwMZlORKSVuEqzBi87oUgxXquLY"
-  movie_url: "https://uca27186745c571b7600571016ef.dl.dropboxusercontent.com/cd/0/get/BsDjozQ0QKtMPMfQ9AAocuywao3VGR_ftE1OEKulsXlIzuzJ_LGOzyY6oG1hwJblyV9Nn38QUJB3Fx7lVfQ8qKo4olRCbxzdo4I3MV0M6-nN4_ps68u9v9s5j3opLXyOF2Bj8fw790QhRMUVz-IhIy1HhB-uAvgaxRdMjR5BmZRp-3WthtrBBOirKPbHdlkl9ss/file"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLTczNjVwMy1jcnJyLWhmeGgteHF5ay1ic2JtcHM2eSJ9/final.m4a?v=1&u=phplatform&e=1662202277&s=JY-DhcTq2hJZx9skppKoM0w8KnVWvGF1-uuhmDDtIbg"
+  movie_url: "https://nw1.seedr.cc/ff_get/1242008028/Tweetys.High.Flying.Adventure.2000.PROPER.1080p.WEBRip.x264-RARBG.mp4?st=xHu7oPCFdJ-x74_QQ6DwCQ&e=1662287062"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Djemtë e këqij - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Aventurat ambicioze të Tuitit - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
 jobs:
