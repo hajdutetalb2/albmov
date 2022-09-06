@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWdvbndraC1kcGlmLWN2dmwtZGR1di03MmV6ZHVxdSJ9/final.m4a?v=1&u=phplatform&e=1662294315&s=mvVgRUfGQCbI9LDI-dHIJ6kK_x4MZiw_jRRdpy9yQMc"
-  movie_url: "https://de14.seedr.cc/ff_get/1243195320/Home.Alone.2.Lost.In.New.York.1992.1080p.BluRay.H264.AAC-RARBG.mp4?st=v9xf_a0e6Z-EA5fxS0pKAA&e=1662379346"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLW1vbGxuNS1oend6LWF1cnAtZGNxeC1wejM0eWl3NCJ9/final.m4a?v=1&u=phplatform&e=1662462924&s=OGD_x7FOdnTVrr1S79AMS_jb0KDV9-hR3hJcCnBVlLU"
+  movie_url: "https://nw5.seedr.cc/ff_get/1243288364/Robin.Hood.1973.1080p.BluRay.H264.AAC-RARBG.mp4?st=tec0zs-vVz1YpETgX2yMxQ&e=1662547622"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/I vetëm në shtëpi 2 - I humbur në Nju Jork - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Robin Hud - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
 jobs:
