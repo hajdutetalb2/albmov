@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLXJlbGhkNC1hY3R6LWFudG4tNGZ0Zy02ZHU1bmIyYSJ9/final.m4a?v=1&u=phplatform&e=1662909399&s=OG6cK2MxMVRc2o4fobIIS561uFN5aG6LGWyiauwtSUU"
-  movie_url: "https://de26.seedr.cc/ff_get/1247185638/Jurassic.Park.II.The.Lost.World.1997.REMASTERED.1080p.BluRay.H264.AAC-RARBG.mp4?st=AkdqO7-WJngrBRB9VidY8A&e=1662993943"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLTNxbzNjYS10a2ViLWVpbmcteHU0ZS0yZmZ4NDI1NCJ9/final.m4a?v=1&u=phplatform&e=1663016564&s=sbS_7j154N8yzuaah3DFIlBgcfAwHLWplld1xxb8Olk"
+  movie_url: "https://de26.seedr.cc/ff_get/1247185638/Jurassic.Park.II.The.Lost.World.1997.REMASTERED.1080p.BluRay.H264.AAC-RARBG.mp4?st=etmbVHAdpiNPq19kjmSh6A&e=1663101236"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
