@@ -6,7 +6,7 @@ on:
       
 env:
   audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLTNxbzNjYS10a2ViLWVpbmcteHU0ZS0yZmZ4NDI1NCJ9/final.m4a?v=1&u=phplatform&e=1663016564&s=sbS_7j154N8yzuaah3DFIlBgcfAwHLWplld1xxb8Olk"
-  movie_url: "https://de26.seedr.cc/ff_get/1247185638/Jurassic.Park.II.The.Lost.World.1997.REMASTERED.1080p.BluRay.H264.AAC-RARBG.mp4?st=etmbVHAdpiNPq19kjmSh6A&e=1663101236"
+  movie_url: "https://digitalb-vod.morescreens.com/cenc_vod_dash/M_Frozen_animacion_,480p,576p,.mp4.urlset/manifest.mpd?id=empty&video_id=12488&token=b52ea995905e05a6af8638eec07f7e9fccb28d60&authority_instance_id=spectar-prd-digitalb"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -39,27 +39,27 @@ jobs:
      # - name: Install stuff
      #   run: brew install ffmpeg
         
-      #- name: ytdlp
-      #  run: wget -O ytdlp 'https://github.com/yt-dlp/yt-dlp/releases/download/2022.07.18/yt-dlp_macos' && chmod 777 ytdlp
+      - name: ytdlp
+        run: wget -O ytdlp 'https://github.com/yt-dlp/yt-dlp/releases/download/2022.07.18/yt-dlp_macos' && chmod 777 ytdlp
 
-      #- name: mp4decrypt
-      #  run: wget -O mp4 'http://catchup-tv.herokuapp.com/mp4decrypt' && chmod 777 mp4
+      - name: mp4decrypt
+        run: wget -O mp4 'http://catchup-tv.herokuapp.com/mp4decrypt' && chmod 777 mp4
 
       - name: Download movie
-        #run: ./ytdlp --allow-u -f f3-v1-x3 'https://digitalb-vod.morescreens.com/cenc_vod_dash/M_My_Little_Pony_A_New_Generation_,480p,576p,720p,1080p,.mp4.urlset/manifest.mpd?id=empty&video_id=12488&token=b52ea995905e05a6af8638eec07f7e9fccb28d60&authority_instance_id=spectar-prd-digitalb'
-        run: wget -O "$movie_name" "$movie_url" #$(curl https://vidoza.net/w7vi997d6oj2.html | grep "source src" | sed -e "s/        <source src=\"\(.*\)\" type='video\/mp4'>/\1/")
+        run: ./ytdlp --allow-u -f f2-v1-x3 'https://digitalb-vod.morescreens.com/cenc_vod_dash/M_Frozen_animacion_,480p,576p,.mp4.urlset/manifest.mpd?id=empty&video_id=12488&token=b52ea995905e05a6af8638eec07f7e9fccb28d60&authority_instance_id=spectar-prd-digitalb'
+        #run: wget -O "$movie_name" "$movie_url" #$(curl https://vidoza.net/w7vi997d6oj2.html | grep "source src" | sed -e "s/        <source src=\"\(.*\)\" type='video\/mp4'>/\1/")
         
       - name: Download audio
-        #run: ./ytdlp --allow-u -f f4-a1-x3 'https://digitalb-vod.morescreens.com/cenc_vod_dash/M_My_Little_Pony_A_New_Generation_,480p,576p,720p,1080p,.mp4.urlset/manifest.mpd?id=empty&video_id=12488&token=b52ea995905e05a6af8638eec07f7e9fccb28d60&authority_instance_id=spectar-prd-digitalb'
-        run: wget -O "$audio_name" "$audio_url"
+        run: ./ytdlp --allow-u -f f2-a1-x3 'https://digitalb-vod.morescreens.com/cenc_vod_dash/M_Frozen_animacion_,480p,576p,.mp4.urlset/manifest.mpd?id=empty&video_id=12488&token=b52ea995905e05a6af8638eec07f7e9fccb28d60&authority_instance_id=spectar-prd-digitalb'
+        #run: wget -O "$audio_name" "$audio_url"
     
-      #- name: decrypt
-      #  run: ./mp4 --key e9c4370095004713baaff297322d9529:50372100d7a90ddc4766920450ea3bdb 'manifest [manifest].m4a' "$audio_name" && rm 'manifest [manifest].m4a'
+      - name: decrypt
+        run: ./mp4 --key e9c4370095004713baaff297322d9529:50372100d7a90ddc4766920450ea3bdb 'manifest [manifest].m4a' "$audio_name" && rm 'manifest [manifest].m4a'
         
 
         
-      #- name: decrypt
-      #  run: ./mp4 --key e9c4370095004713baaff297322d9529:50372100d7a90ddc4766920450ea3bdb 'manifest [manifest].mp4' "$movie_name"
+      - name: decrypt
+        run: ./mp4 --key e9c4370095004713baaff297322d9529:50372100d7a90ddc4766920450ea3bdb 'manifest [manifest].mp4' "$movie_name"
         
 
       # made to work for the RARBG x264 AAC version of Ratatouille
