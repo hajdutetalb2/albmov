@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLTNxbzNjYS10a2ViLWVpbmcteHU0ZS0yZmZ4NDI1NCJ9/final.m4a?v=1&u=phplatform&e=1663016564&s=sbS_7j154N8yzuaah3DFIlBgcfAwHLWplld1xxb8Olk"
-  movie_url: "https://digitalb-vod.morescreens.com/cenc_vod_dash/M_Frozen_animacion_,480p,576p,.mp4.urlset/manifest.mpd?id=empty&video_id=12488&token=b52ea995905e05a6af8638eec07f7e9fccb28d60&authority_instance_id=spectar-prd-digitalb"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLTJoazZ5Yy1haXo1LWRpem4tMnR2dC1paGZ1c2dwaSJ9/final.m4a?v=1&u=phplatform&e=1663157222&s=hxqs5lmZdzqNhlKuB--DBES8tMdhURBbv9GR1DfKZrU"
+  movie_url: "https://nw16.seedr.cc/ff_get/1253291789/Jurassic.Park.III.2001.REMASTERED.1080p.BluRay.H264.AAC-RARBG.mp4?st=lUbBrWhSJQlHNeQP7Y50yA&e=1663241873"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Bota e humbur - Xhurasik Park - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Xhurasik Park III - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
   
@@ -40,27 +40,25 @@ jobs:
      # - name: Install stuff
      #   run: brew install ffmpeg
         
-      - name: ytdlp
-        run: wget -O ytdlp 'https://github.com/yt-dlp/yt-dlp/releases/download/2022.07.18/yt-dlp_macos' && chmod 777 ytdlp
+      #- name: ytdlp
+      #  run: wget -O ytdlp 'https://github.com/yt-dlp/yt-dlp/releases/download/2022.07.18/yt-dlp_macos' && chmod 777 ytdlp
 
-      - name: mp4decrypt
-        run: wget -O mp4 'http://catchup-tv.herokuapp.com/mp4decrypt' && chmod 777 mp4
+      #- name: mp4decrypt
+      #  run: wget -O mp4 'http://catchup-tv.herokuapp.com/mp4decrypt' && chmod 777 mp4
 
       - name: Download movie
-        run: ./ytdlp --allow-u -f f2-v1-x3 'https://digitalb-vod.morescreens.com/cenc_vod_dash/M_Frozen_animacion_,480p,576p,.mp4.urlset/manifest.mpd?id=empty&video_id=12488&token=b52ea995905e05a6af8638eec07f7e9fccb28d60&authority_instance_id=spectar-prd-digitalb'
-        #run: wget -O "$movie_name" "$movie_url" #$(curl https://vidoza.net/w7vi997d6oj2.html | grep "source src" | sed -e "s/        <source src=\"\(.*\)\" type='video\/mp4'>/\1/")
+        #run: ./ytdlp --allow-u -f f2-v1-x3 'https://digitalb-vod.morescreens.com/cenc_vod_dash/M_Frozen_animacion_,480p,576p,.mp4.urlset/manifest.mpd?id=empty&video_id=12488&token=b52ea995905e05a6af8638eec07f7e9fccb28d60&authority_instance_id=spectar-prd-digitalb'
+        run: wget -O "$movie_name" "$movie_url" #$(curl https://vidoza.net/w7vi997d6oj2.html | grep "source src" | sed -e "s/        <source src=\"\(.*\)\" type='video\/mp4'>/\1/")
         
       - name: Download audio
-        run: ./ytdlp --allow-u -f f2-a1-x3 'https://digitalb-vod.morescreens.com/cenc_vod_dash/M_Frozen_animacion_,480p,576p,.mp4.urlset/manifest.mpd?id=empty&video_id=12488&token=b52ea995905e05a6af8638eec07f7e9fccb28d60&authority_instance_id=spectar-prd-digitalb'
-        #run: wget -O "$audio_name" "$audio_url"
+        #run: ./ytdlp --allow-u -f f2-a1-x3 'https://digitalb-vod.morescreens.com/cenc_vod_dash/M_Frozen_animacion_,480p,576p,.mp4.urlset/manifest.mpd?id=empty&video_id=12488&token=b52ea995905e05a6af8638eec07f7e9fccb28d60&authority_instance_id=spectar-prd-digitalb'
+        run: wget -O "$audio_name" "$audio_url"
     
-      - name: decrypt
-        run: ./mp4 --key e9c4370095004713baaff297322d9529:50372100d7a90ddc4766920450ea3bdb 'manifest [manifest].m4a' "$audio_name" && rm 'manifest [manifest].m4a'
+      #- name: decrypt
+      #  run: ./mp4 --key e9c4370095004713baaff297322d9529:50372100d7a90ddc4766920450ea3bdb 'manifest [manifest].m4a' "$audio_name" && rm 'manifest [manifest].m4a'
         
-
-        
-      - name: decrypt
-        run: ./mp4 --key e9c4370095004713baaff297322d9529:50372100d7a90ddc4766920450ea3bdb 'manifest [manifest].mp4' "$movie_name"
+      #- name: decrypt
+      #  run: ./mp4 --key e9c4370095004713baaff297322d9529:50372100d7a90ddc4766920450ea3bdb 'manifest [manifest].mp4' "$movie_name"
         
 
       # made to work for the RARBG x264 AAC version of Ratatouille
