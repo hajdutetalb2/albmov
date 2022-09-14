@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLTJoazZ5Yy1haXo1LWRpem4tMnR2dC1paGZ1c2dwaSJ9/final.m4a?v=1&u=phplatform&e=1663157222&s=hxqs5lmZdzqNhlKuB--DBES8tMdhURBbv9GR1DfKZrU"
-  movie_url: "https://uc1f6c55934a1e1c8c4d6d606005.dl.dropboxusercontent.com/cd/0/get/Bs4DIEVepww8ZDnbCdZcARWgTdJFjjZ1Qx70d7JuiB1usYONXqrW-AMkCim8FDxcpBQYPFFl4y7dDNA2l6nY4TZnJDukq7bqXC6YqqflgZheg0N7MhDDXvMBZUjHvB_szsgv1SqP1q4zMju-38VQ_nCEoz_TV2Hm2TMVEUqb1zEBFHLux72qmqDk1c-MOfNLA0I/file"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLTJoazZ5Yy1haXo1LWRpem4tMnR2dC1paGZ1c2dwaSJ9/final.m4a?v=1&u=phplatform&e=1663159225&s=QjiMR3pae33fgN3S31Zj98hfSVuZH1GDIBBU3t5FzcI"
+  movie_url: "https://uc87d785140f35a96f2722a36cdf.dl.dropboxusercontent.com/cd/0/get/Bs69qbuBlAS_Kbzmv6XKj8tE6LDLILB3daARao5gPkO3hSd_XVh3dBeyYklJsFbuXzJF7GiwXDFk2zbDepXB7Sohyt7jCUEZjf6auP7Z-ww1mvfNjFAvhmutL0roLblHHKgxWAe3FULMBecH8aAPIb0-fn2WyN8Ip8F8yVET2NsCKRvfexd-s4DrOOxLBOXOGBg/file"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
