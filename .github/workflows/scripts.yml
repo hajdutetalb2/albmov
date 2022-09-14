@@ -6,7 +6,7 @@ on:
       
 env:
   audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLTJoazZ5Yy1haXo1LWRpem4tMnR2dC1paGZ1c2dwaSJ9/final.m4a?v=1&u=phplatform&e=1663157222&s=hxqs5lmZdzqNhlKuB--DBES8tMdhURBbv9GR1DfKZrU"
-  movie_url: "https://nw16.seedr.cc/ff_get/1253291789/Jurassic.Park.III.2001.REMASTERED.1080p.BluRay.H264.AAC-RARBG.mp4?st=lUbBrWhSJQlHNeQP7Y50yA&e=1663241873"
+  movie_url: "https://uc1f6c55934a1e1c8c4d6d606005.dl.dropboxusercontent.com/cd/0/get/Bs4DIEVepww8ZDnbCdZcARWgTdJFjjZ1Qx70d7JuiB1usYONXqrW-AMkCim8FDxcpBQYPFFl4y7dDNA2l6nY4TZnJDukq7bqXC6YqqflgZheg0N7MhDDXvMBZUjHvB_szsgv1SqP1q4zMju-38VQ_nCEoz_TV2Hm2TMVEUqb1zEBFHLux72qmqDk1c-MOfNLA0I/file"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
