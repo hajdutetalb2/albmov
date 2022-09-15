@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLTJoazZ5Yy1haXo1LWRpem4tMnR2dC1paGZ1c2dwaSJ9/final.m4a?v=1&u=phplatform&e=1663159225&s=QjiMR3pae33fgN3S31Zj98hfSVuZH1GDIBBU3t5FzcI"
-  movie_url: "https://uc87d785140f35a96f2722a36cdf.dl.dropboxusercontent.com/cd/0/get/Bs69qbuBlAS_Kbzmv6XKj8tE6LDLILB3daARao5gPkO3hSd_XVh3dBeyYklJsFbuXzJF7GiwXDFk2zbDepXB7Sohyt7jCUEZjf6auP7Z-ww1mvfNjFAvhmutL0roLblHHKgxWAe3FULMBecH8aAPIb0-fn2WyN8Ip8F8yVET2NsCKRvfexd-s4DrOOxLBOXOGBg/file"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLXByb2Ztcy02YWh6LWM3ZGEtN3Z1ZS1odjZvY2FmcSJ9/final.m4a?v=1&u=phplatform&e=1663250454&s=UerRSmEJfVCxoD6CNztsaUzIZkQMk7HgZZ_74jSmXpI"
+  movie_url: "https://rs8.seedr.cc/ff_get/1253677494/Lady.And.The.Tramp.II.Scamps.Adventure.2001.1080p.BluRay.H264.AAC-RARBG.mp4?st=Cg46vNdnJx1qWp6cLvPhjw&e=1663335109"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Xhurasik Park III - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Lili dhe endacaku II- Qenushi rebel - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
   
