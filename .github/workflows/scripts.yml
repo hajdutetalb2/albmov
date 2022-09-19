@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLXByb2Ztcy02YWh6LWM3ZGEtN3Z1ZS1odjZvY2FmcSJ9/final.m4a?v=1&u=phplatform&e=1663250454&s=UerRSmEJfVCxoD6CNztsaUzIZkQMk7HgZZ_74jSmXpI"
-  movie_url: "https://rs8.seedr.cc/ff_get/1253677494/Lady.And.The.Tramp.II.Scamps.Adventure.2001.1080p.BluRay.H264.AAC-RARBG.mp4?st=Cg46vNdnJx1qWp6cLvPhjw&e=1663335109"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWRlMnNybS1jbm01LWZmdGotYjRwaC1nbm02N2c2NCJ9/final.m4a?v=1&u=phplatform&e=1663614922&s=4CKX9h1NN21puenDElMCx0bHihqqZokashrsNPpJnx0"
+  movie_url: "https://rs21.seedr.cc/ff_get/1256683278/Lightyear.2022.1080p.BluRay.H264.AAC-RARBG.mp4?st=ZzSxgYAl7-UK-SIbAm3gjA&e=1663699617"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Lili dhe endacaku II- Qenushi rebel - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Lightyear - Historia e vërtetë e Bazit - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
   
