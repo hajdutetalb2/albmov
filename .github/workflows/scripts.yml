@@ -6,7 +6,7 @@ on:
       
 env:
   audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLXAyN25rbS02a2FiLWY0cmYtZnA1Mi1zdXBibGlwcSJ9/final.m4a?v=1&u=phplatform&e=1664187104&s=qah839YdXkASzpkAIBuNzsvnQ--i151H2UXQXmzvK_U"
-  movie_url: "https://nw4.seedr.cc/ff_get/1255649704/The.BFG.1989.1080p.BRrip.x264.YIFY.mp4?st=pr1QwtU1cYXh9CcVkmgqQQ&e=1664272129"
+  movie_url: "https://nw4.seedr.cc/ff_get/1255649704/The.BFG.1989.1080p.BRrip.x264.YIFY.mp4?st=LOyF6Av_ZDrFt4EsD7gxwg&e=1664272808"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
