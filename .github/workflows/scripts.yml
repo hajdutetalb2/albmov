@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLXFyN3pkZS0zeTZiLWUydGUtamx3YS12NXVjcmNoZSJ9/final.m4a?v=1&u=phplatform&e=1664366882&s=5_Yi-MH773SD_ped9buDnCNkkZWrG9RU1jpUYCeAZpM"
-  movie_url: "https://nw16.seedr.cc/ff_get/1270515233/Rugrats.Go.Wild.2003.1080p.BluRay.x264.AAC5.1-[YTS.MX].mp4?st=WPBSv_wLYU7YcEndCkj-8Q&e=1664451155"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWFtczV3bi1xcWNqLWU1dGgtaXo2My1meGxxaWxvYSJ9/final.m4a?v=1&u=phplatform&e=1664887350&s=LclGqL04o4Ci-3KmSt_Xgjd4lOO37-_oTPOu61iTEks"
+  movie_url: "https://nw11.seedr.cc/ff_get/1283414536/Jimmy.Neutron.Boy.Genius.2001.1080p.BluRay.x264.AAC5.1-[YTS.MX].mp4?st=X0abiNRkG_6_Qb0LqhTplg&e=1664972283"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Rugrats në Paris - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Xhimi Neutron: Djali gjeni - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
   
