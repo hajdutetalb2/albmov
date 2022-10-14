@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLXFyZmI3cS1jcXhmLWVzeGYtbDJnZS02dGVoZ2xvbSJ9/final.m4a?v=1&u=phplatform&e=1665051715&s=XrbWC8nGLfN0ffH-oT1vqBKNuNpK9zDv2F0xfsklBFw"
-  movie_url: "https://rs9.seedr.cc/ff_get/1284152729/Big.Hero.6.2014.1080p.BluRay.H264.AAC-RARBG.mp4?st=u9akKyZEHB-sLVdB1lk_1A&e=1665136601"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLXR3bnY3ei13NGpqLWNoeGcteWFueS1oMmZ4Nmw3eSJ9/final.m4a?v=1&u=phplatform&e=1665744571&s=LdiMC5dNH-DKXPIZOSL6gyfdyQhWVrZmrsuIVhVu8-I"
+  movie_url: "https://rs8.seedr.cc/ff_get/1289348203/The.Sword.in.the.Stone.1963.1080p.BluRay.H264.AAC-RARBG.mp4?st=bImsz5sPA0ywmbHg90AugQ&e=1665829861"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/6 heronjtë - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Shpata në gur - Dubluar në Shqip (Dublimi Jess) - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
   
