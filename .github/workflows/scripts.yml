@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLTdseHdzcy1sMzViLWFjbm0tMzJnNi1xd2VyZHZ0eSJ9/Aventurat%20e%20Ikabodit%20dhe%20Zotit%20Thithe%CC%88lope%CC%88%20-%20Dubluar%20ne%CC%88%20Shqip%20-%20FULL%20HD.m4a?v=1&u=phplatform&e=1665929070&s=X47NuxiBTuloVNpNrpXBHdutZKvNwdSvIogGjEsTHZY"
-  movie_url: "https://nw4.seedr.cc/ff_get/1291102692/The.Adventures.of.Ichabod.and.Mr.Toad.1949.1080p.BluRay.H264.AAC-RARBG.mp4?st=WxGJkoram67-3__5661VLg&e=1666013795"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLTQ0eHhnei11cmlqLWRpbmwtaWcycy10Y2dzcjNnaSJ9/final.m4a?v=1&u=phplatform&e=1666436173&s=2bWYn1bBmYPLUV_6fMSCX0Ku0yTD8PV4rFYdn9QHiD8"
+  movie_url: "https://nw9.seedr.cc/ff_get/1293203234/Peter.Pan.II.Return.to.Neverland.2002.1080p.BluRay.H264.AAC-RARBG.mp4?st=UlbzbdSv5DOFqtfnjzYlHQ&e=1666520908"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Aventurat e Ikabodit dhe Zotit Thithëlopë - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Piter Pani: Kthim në ishullin që nuk ekziston - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
   
