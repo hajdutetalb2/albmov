@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWNlZ3NzbC10bW16LWI1dGotNHV1ZS1oaWRvaXZ6dSJ9/final.m4a?v=1&u=phplatform&e=1666459537&s=hjsypc1fpscSR-K4d09Pinu-ZpXg7XoBOTZmAXkkeuo"
-  movie_url: "https://nw7.seedr.cc/ff_get/1295565064/Minions.The.Rise.of.Gru.2022.1080p.BluRay.H264.AAC-RARBG.mp4?st=AyHGaAD8eB7jv0idmTGtHg&e=1666543359"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLTRmbXU0Yy15aW81LWY2amwtcGR2cy15bnNzdmNucSJ9/final.m4a?v=1&u=phplatform&e=1666555699&s=ejRwMmv75TiSs60wVY1ZVUusLZGTdmYdrZniGx_SMx0"
+  movie_url: "https://rs3.seedr.cc/ff_get/1296036786/Hey.Arnold.The.Movie.2002.1080p.BluRay.x264.AAC5.1-[YTS.MX].mp4?st=AcXNSF8uU2vnbWMWosvKfA&e=1666640337"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Minionët: Ngritja e Grusë - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Film për Arnoldin - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
   
