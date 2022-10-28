@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLTJlZGl0aC02bXJiLWFvcGktcnMzbi0zeWJncTZiZSJ9/final.m4a?v=1&u=phplatform&e=1666898165&s=QmZaKo_nZynEnJ5rXimCtM6Mk3bV4oYpj7D-hZ8MuJA"
-  movie_url: "https://rs4.seedr.cc/ff_get/1296925066/Mickeys.House.of.Villains.2002.1080p.WEBRip.x264-RARBG.mp4?st=74xnY1k3GEnqI4zwg4gT-Q&e=1666982968"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLXphejdrdy1sZm5qLWU0bGgtc2d0eC0ycTRlaHRsZSJ9/final.m4a?v=1&u=phplatform&e=1666982153&s=H9q20Pd0w9HfXLqwIm9x03LeDv4ktjCCSLshFt485AA"
+  movie_url: "https://nw15.seedr.cc/ff_get/1298802261/Coraline.2009.1080p.BluRay.H264.AAC-RARBG.mp4?st=u2eQZ7bAUhNgn_qRj31vzQ&e=1667067430"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Shtëpia e horrave - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Koralina - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
   
