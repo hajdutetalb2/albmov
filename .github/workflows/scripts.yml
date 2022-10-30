@@ -6,7 +6,7 @@ on:
       
 env:
   audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLXVqcmFjaC1wZXJ2LWNnYmItdHdnNC1vZ2h2d2JoNCJ9/final.m4a?v=1&u=phplatform&e=1667055321&s=Pz425hGlSP61SL_73zLzfbUpzBZqzoSG1w8PF5QMMeM"
-  movie_url: "https://rs5.seedr.cc/ff_get/1299898299/Leroy.and.Stitch.2006.1080p.WEBRip.x264-RARBG.mp4?st=PtSBr2mwlcprcDbmS1saoQ&e=1667140001"
+  movie_url: "https://nw6.seedr.cc/ff_get/1300168174/The.Little.Mermaid.III.Ariels.Beginning.2008.1080p.BluRay.H264.AAC-RARBG.mp4?st=KaxDNbIpNk9XX74rgyvdyg&e=1667229763"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Liroi dhe Stiç - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Sirena e vogël 3- Historia e Arielit - Dubluar në Shqip (Dublimi Onix) - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
   
