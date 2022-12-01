@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWJzaXR6ci00M3c1LWhhdmstb3B5Yi1oYnp0ZG1jeSJ9/final.m4a?v=1&u=phplatform&e=1669468751&s=QWkpGK5VqwlJnI-eU7tHqnuI0MF4n53fG63BX80ipe8"
-  movie_url: "https://nw18.seedr.cc/ff_get/1304469612/Curious.George.2006.1080p.BluRay.x264.YIFY.mp4?st=qHjCnAK7oRDqMIkI_mK-Gg&e=1669553431"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWo3Zm9iaS1meTNuLWU0am4tNTN2by10dmh3bGN4YSJ9/final.m4a?v=1&u=phplatform&e=1669925891&s=MQln_QtO7yzHtN3tFxrWmPlo7iPfDzLXH-eSCOVYJA4"
+  movie_url: "https://nw4.seedr.cc/ff_get/1320983954/The.Polar.Express.2004.1080p.BluRay.H264.AAC-RARBG.mp4?st=CYv3VLBQIZ_GLOfu82Z6_g&e=1670010553"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Xhorxhi kurioz - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Ekspresi polar - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
   
