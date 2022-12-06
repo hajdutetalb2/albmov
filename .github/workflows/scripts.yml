@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWo3Zm9iaS1meTNuLWU0am4tNTN2by10dmh3bGN4YSJ9/final.m4a?v=1&u=phplatform&e=1669925891&s=MQln_QtO7yzHtN3tFxrWmPlo7iPfDzLXH-eSCOVYJA4"
-  movie_url: "https://nw4.seedr.cc/ff_get/1320983954/The.Polar.Express.2004.1080p.BluRay.H264.AAC-RARBG.mp4?st=CYv3VLBQIZ_GLOfu82Z6_g&e=1670010553"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWp5cDR1by16bTdmLWRoZGQtcTVueS1jdGhheW9maSJ9/Kukullat%20-%20Dubluar%20ne%CC%88%20Shqip%20-%20FULL%20HD.m4a?v=1&u=phplatform&e=1670350448&s=aJg1BiEI6QywKTp_ft5XNGGwxnZmPeJ1kKrqQ-nAkAc"
+  movie_url: "https://rs14.seedr.cc/ff_get/1324549893/The.Muppets.2011.1080p.BluRay.x264.AAC5.1-[YTS.MX].mp4?st=9jOen1QcRx27KDRFWdgJ_A&e=1670435007"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Ekspresi polar - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Kukullat - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
   
