@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWE3NWZrdC14dW5qLWZ4cG4teHhhZC13bWY1cW54eSJ9/Kukullat%20e%20shume%CC%88ke%CC%88rkuara%20-%20Dubluar%20ne%CC%88%20Shqip%20-%20FULL%20HD.m4a?v=1&u=phplatform&e=1670507186&s=tPTOa5rygLKceoEH-jpRKxPPZ3PiKvOTSK0qlhN9EcI"
-  movie_url: "https://nw4.seedr.cc/ff_get/1324612527/Muppets.Most.Wanted.2014.1080p.BluRay.H264.AAC-RARBG.mp4?st=5F_wbPA7K3OkePtHVdK5tA&e=1670591881"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLTRubXRrai16anlyLWN5ZG0tNHUyay1vM2lwc3AzYSJ9/final.m4a?v=1&u=phplatform&e=1670516228&s=44860s--P0prPbaRdCE-zanzvIq5hg9tAesNXLnxHtM"
+  movie_url: "https://de25.seedr.cc/ff_get/1322301472/Looney.Tunes.Back.in.Action.2003.1080p.BluRay.H264.AAC-RARBG.mp4?st=XUyu-yF89vhTaYpedbjm8Q&e=1670600896"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Kukullat e shumëkërkuara - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Luni Tuns- Përsëri në aksion - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
   
