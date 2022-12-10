@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLTRubXRrai16anlyLWN5ZG0tNHUyay1vM2lwc3AzYSJ9/final.m4a?v=1&u=phplatform&e=1670516228&s=44860s--P0prPbaRdCE-zanzvIq5hg9tAesNXLnxHtM"
-  movie_url: "https://de25.seedr.cc/ff_get/1322301472/Looney.Tunes.Back.in.Action.2003.1080p.BluRay.H264.AAC-RARBG.mp4?st=XUyu-yF89vhTaYpedbjm8Q&e=1670600896"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLXFjeHoyZi1qd3liLWNwemstc3NhNS1uNHpvZW15bSJ9/final.m4a?v=1&u=phplatform&e=1670673203&s=Pbp1W_7lLlndT8DMdWjHgnHU_by4Crq7w5MNpxJ3ZGs"
+  movie_url: "https://nw15.seedr.cc/ff_get/1326205061/Babys.Day.Out.1994.PROPER.1080p.WEBRip.x264-RARBG.mp4?st=dmMJu3mmsuof380FdUljEQ&e=1670757926"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Luni Tuns- Përsëri në aksion - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Arratisja e bebes - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
   
