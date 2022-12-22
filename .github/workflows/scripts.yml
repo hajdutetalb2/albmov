@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLTd3eWZkNC1heXk1LWVqZmwtYzQyaS1oMm13aWU3cSJ9/final.m4a?v=1&u=phplatform&e=1671284383&s=Nv7b5XLWkrF0-84bkqmb9OxwCLfKMiNmMgnB9mtRmDM"
-  movie_url: "https://nw2.seedr.cc/ff_get/1343624304/Barnyard.2006.1080p.BluRay.H264.AAC-RARBG.mp4?st=Om9obujfRS5-gV4TYkSO9A&e=1671369057"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWx5emN5cC10bGF6LWN1dmotM2EzYi1ycDNpM3V0cSJ9/final.m4a?v=1&u=phplatform&e=1671736242&s=HgXkpD8OHlXH50NZuIm1ptZf5W6n1XCdc-XcSfKTrwQ"
+  movie_url: "https://de18.seedr.cc/ff_get/1349786119/Aladdin.1992.1080p.BluRay.H264.AAC-RARBG.mp4?st=Zz1J5woiWkMXXqYzDuwzRg&e=1671820940"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Plevica në fermë - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Aladini - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }}
   
   
