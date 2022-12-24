@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWx5emN5cC10bGF6LWN1dmotM2EzYi1ycDNpM3V0cSJ9/final.m4a?v=1&u=phplatform&e=1671736242&s=HgXkpD8OHlXH50NZuIm1ptZf5W6n1XCdc-XcSfKTrwQ"
-  movie_url: "https://de18.seedr.cc/ff_get/1349786119/Aladdin.1992.1080p.BluRay.H264.AAC-RARBG.mp4?st=Zz1J5woiWkMXXqYzDuwzRg&e=1671820940"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLXVsZGYzMi1jdmVmLWI3cmoteHVvbC1pZWN6cW9xNCJ9/final.m4a?v=1&u=phplatform&e=1671909220&s=24dbOsEOZ0Mxp73zjHAz4UG-jagabbEcUKM2IM6pWzI"
+  movie_url: "https://rs21.seedr.cc/ff_get/1353033944/Muppet.Treasure.Island.1996.PROPER.1080p.BluRay.H264.AAC-RARBG.mp4?st=m13rFFUzS0ld1t-O_YZxzQ&e=1671993870"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Aladini - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Ishulli i thesarit të Kukullave - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
