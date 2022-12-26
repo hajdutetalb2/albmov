@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLXg2d2g3dC10bmFiLWR0eGctdXR4ZS02bWRlZDJ3NCJ9/final.m4a?v=1&u=phplatform&e=1671979336&s=HZ04W4yIvI64IocaHqJtjk_BZi7jn79AQnf6_T6977U"
-  movie_url: "https://de17.seedr.cc/ff_get/1354911887/The.Santa.Clause.2.2002.1080p.BluRay.H264.AAC-RARBG.mp4?st=lqwTXfbowI07p1vlKDRMCg&e=1672064005"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLXdnMnFoNC14cWhqLWdlemwteGlyYS1xazJ4ZHJrbSJ9/final.m4a?v=1&u=phplatform&e=1672051944&s=vqgTwnwUW3ZTrOJPhjP_vkIDzb1viGf9wvXe7jQUeXU"
+  movie_url: "https://de19.seedr.cc/ff_get/1354952186/Elf.2003.1080p.BluRay.H264.AAC-RARBG.mp4?st=eSHi2nGSC4WBWJa22mjcjA&e=1672136596"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Kontrata e Santa Klaus 2 - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Elfi - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
