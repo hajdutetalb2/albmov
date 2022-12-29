@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLXVzYzdkeS1zamhmLWFlN2UtbXM0Ny1tN3VvZnVubSJ9/final.m4a?v=1&u=phplatform&e=1672257272&s=dbaBeElD3ROqKeYYC5aALRYvzGXCWLlZhpzZurGVrZc"
-  movie_url: "https://nw3.seedr.cc/ff_get/1357234876/Beethoven.1992.1080p.BluRay.H264.AAC-RARBG.mp4?st=7xiWEUkOyCmvyFPCkbkL2A&e=1672342672"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLXh5ZnRoby1tazdmLWN3Ym8tdXFteC00amFwc2p2eSJ9/final.m4a?v=1&u=phplatform&e=1672315955&s=QW4DMRAf-EeWCscxbJTAbOxDrTYKzTx2F_75v1h76xg"
+  movie_url: "https://rs2.seedr.cc/ff_get/1357371785/Herbie.Goes.to.Monte.Carlo.1977.1080p.BluRay.H264.AAC-RARBG.mp4?st=RNVo0iLj8UA1OnZ3Ef2SGw&e=1672400964"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Beethoven - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Herbi shkon në Monte Karlo - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
