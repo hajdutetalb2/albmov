@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWpienczay1nYmFuLWVjcmEtdGQ2dC1ycHdkYm5ibSJ9/final.m4a?v=1&u=phplatform&e=1672413334&s=Y7dtHxj-Uya7WF9A7NuYBBcGzvAohsCcQD4a9qW8CkA"
-  movie_url: "https://nw20.seedr.cc/ff_get/1358419117/Stuart.Little.II.2002.1080p.BluRay.H264.AAC-RARBG.mp4?st=uUKPqOX0CFuHZQq1Kk55Aw&e=1672498070"
+  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWlqNmtsZy16amxmLWcyYmctYTczdi14eXE0dnllbSJ9/final.m4a?v=1&u=phplatform&e=1672923534&s=QJFC_VQ9TMTQQKTg8xR5KeIK9SZ0graEhZBDTtTSJnQ"
+  movie_url: "https://nw10.seedr.cc/ff_get/1380337130/Nanny.McPhee.2005.1080p.BluRay.H264.AAC-RARBG.mp4?st=IdQABtXnanIJlSBjZnDt2A&e=1673008114"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Stuart Little 2 - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Dadoja Mekfi - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
@@ -61,12 +61,12 @@ jobs:
       #  run: ./mp4 --key e9c4370095004713baaff297322d9529:50372100d7a90ddc4766920450ea3bdb 'manifest [manifest].mp4' "$movie_name"
 
       # made to work for the RARBG x264 AAC version of Stuart Little 2
-      - name: SL get part 1
-        run: ffmpeg -to 35:06.800 -i "$movie_name" -c copy part1.mp4
-      - name: SL get part 2
-        run: ffmpeg -ss 36:04.84170833333 -i "$movie_name" -c copy part2.mp4
-      - name: SL concat
-        run: printf "file 'part1.mp4'\nfile 'part2.mp4'" > list.txt && rm "$movie_name" && ffmpeg -itsoffset -0.04170833333 -f concat -safe 0 -i list.txt -vcodec copy -acodec copy -map_metadata -1 -movflags +faststart "$movie_name" && rm list.txt part1.mp4 part2.mp4
+      #- name: SL get part 1
+      #  run: ffmpeg -to 35:06.800 -i "$movie_name" -c copy part1.mp4
+      #- name: SL get part 2
+      #  run: ffmpeg -ss 36:04.84170833333 -i "$movie_name" -c copy part2.mp4
+      #- name: SL concat
+      #  run: printf "file 'part1.mp4'\nfile 'part2.mp4'" > list.txt && rm "$movie_name" && ffmpeg -itsoffset -0.04170833333 -f concat -safe 0 -i list.txt -vcodec copy -acodec copy -map_metadata -1 -movflags +faststart "$movie_name" && rm list.txt part1.mp4 part2.mp4
       
 
       # made to work for the RARBG x264 AAC version of Ratatouille
