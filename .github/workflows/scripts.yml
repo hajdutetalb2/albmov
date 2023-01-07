@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://data.atonline.net/~jwt/eyJhY3QiOiJnZXQiLCJpbiI6eyJkbCI6dHJ1ZX0sIm1pbWUiOiJhdWRpby94LW00YSIsInAiOiJibG9ic3JjL2Jsb2JzLWlqNmtsZy16amxmLWcyYmctYTczdi14eXE0dnllbSJ9/final.m4a?v=1&u=phplatform&e=1672923534&s=QJFC_VQ9TMTQQKTg8xR5KeIK9SZ0graEhZBDTtTSJnQ"
-  movie_url: "https://nw10.seedr.cc/ff_get/1380337130/Nanny.McPhee.2005.1080p.BluRay.H264.AAC-RARBG.mp4?st=IdQABtXnanIJlSBjZnDt2A&e=1673008114"
+  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/f6/f629/f6296ffe-b164-4657-b91f-35a412c4ed5f.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230107%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230107T134912Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=5ff8e5a14cb242c74fed76b4a4ed0e0813fbd1db701c1700b0a28fd52565aefb"
+  movie_url: "https://rs11.seedr.cc/ff_get/1380973666/Lucky.And.Zorba.1998.1080p.WEBRip.x264.AAC-[YTS.MX].mp4?st=6SEAltpmwkIjI3k1ZCfXIw&e=1673185884"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Dadoja Mekfi - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Pulëbardha dhe macja - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
