@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/43/43f3/43f3b3bd-a174-41b4-a4d6-c7ad888eff33.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230108%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230108T092539Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=503d85c96de3e1f89128f5a8fa6d072c89cfe105025e4da39d9b222503e64112"
-  movie_url: "https://nw1.seedr.cc/ff_get/1388387404/The.SpongeBob.Movie.Sponge.Out.of.Water.2015.1080p.BluRay.H264.AAC-RARBG.mp4?st=413cdXFZXHIRocDtU6j1Eg&e=1673256364"
+  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/ac/aca6/aca68254-d522-4d55-9712-0068f0b77208.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230108%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230108T111556Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=363092b286f60af008b1ab38a4ce15b473883fe27230b2bcb042680c4159da81"
+  movie_url: "https://de26.seedr.cc/ff_get/1391270091/The.SpongeBob.SquarePants.Movie.2004.1080p.BluRay.x264-[YTS.AM].mp4?st=10DFIqdRWjzqENS_Mt6GfA&e=1673263016"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Bob Sfungjeri- Aventurat jashtë ujit - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/SfungjerBob PantallonKatrori - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
