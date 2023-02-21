@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/a9/a992/a9929dc4-74fc-4413-ad3f-817264f49f3f.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230213%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230213T114334Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=130ccb80208d4267a54d5ce84c63601b5e30c8ae01609d3652edb8aa0700785d"
-  movie_url: "https://de14.seedr.cc/ff_get/1431006813/Tom.and.Jerry.Blast.Off.to.Mars.2005.1080p.BluRay.H264.AAC-RARBG.mp4?st=m3YBs5N-eMrxDsV16Zi9AA&e=1676375149"
+  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/c8/c842/c84289bb-e047-40e7-8557-9a8d30661746.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230221%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230221T162140Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=c35c62217fd298f58d0d47498515ac8b26f0ac37b89ce47db7037b026d50965f"
+  movie_url: "https://rs13.seedr.cc/ff_get/1438277226/The.Trumpet.Of.The.Swan.2001.1080p.WEBRip.x264.AAC-[YTS.MX].mp4?st=NQIiOHKVVKig9_yqKe21WQ&e=1677082975"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Tomi dhe Xherri-  Udhëtimi për në Mars - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Trumpeta e mjellmës - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
