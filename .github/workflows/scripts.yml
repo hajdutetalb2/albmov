@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/ca/ca02/ca0249e6-55c1-49d6-b15e-16067cac8637.bin?response-content-disposition=attachment%3B%20filename%3D%22finalk.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230227%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230227T112655Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=5993e228af38154e3fa3c8f4cec15c9453072176e0829dab213a567ff146c7ca"
-  movie_url: "https://rs6.seedr.cc/ff_get/1441660820/Kung.Fu.Panda.2008.1080p.BluRay.H264.AAC-RARBG.mp4?st=uwUiUhVbOorEd5wFE95OnA&e=1677583707"
+  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/b8/b809/b809e91b-ff2b-4a8a-87a5-519d051f0ce9.bin?response-content-disposition=attachment%3B%20filename%3D%22finalk.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230228%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230228T164733Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=394665b416858a870a55afb66bbe3244b50e78b540727cb36f475f8966b007db"
+  movie_url: "https://de26.seedr.cc/ff_get/1442230651/Kung.Fu.Panda.2.2011.1080p.BluRay.H264.AAC-RARBG.mp4?st=c2vtwabL7A0wsDtYxM6UJA&e=1677689283"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Kung Fu Panda - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Kung Fu Panda 2 - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
