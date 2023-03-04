@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/3b/3bdb/3bdbda19-2112-46f8-877a-52eeaad200a9.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230303%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230303T145610Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=cbe32f49da0166fb50d8e3d27c3c4cc48203a2d0a9e2c3791e6b1b41157df533"
-  movie_url: "https://de21.seedr.cc/ff_get/1444629452/Kung.Fu.Panda.3.2016.PROPER.1080p.BluRay.H264.AAC-RARBG.mp4?st=TP3J77096VQhQC9-8HhCOQ&e=1677941800"
+  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/22/22b4/22b46b95-e5cc-431a-bc65-ec324113e146.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230304%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230304T122750Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=bf1df702810199c0b26fd853f370ddc71d54665dd41a03494909efab809fab90"
+  movie_url: "https://rs4.seedr.cc/ff_get/1445246005/ParaNorman.2012.1080p.BluRay.H264.AAC-RARBG.mp4?st=z7P1nNZVe-FrnXClTox7Jw&e=1678019440"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Kung Fu Panda 3 - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/ParaNorman - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
