@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/f9/f9e2/f9e275a1-78d8-4e55-9c2c-a7a2cb8aa684.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230319%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230319T121523Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=82169a2264eeb70a3cb5eca4994ea9058c54a1fe365f18fb385ac7ba5c8bbe90"
-  movie_url: "https://de18.seedr.cc/ff_get/1471496349/The.Last.Unicorn.1982.1080p.BluRay.H264.AAC-RARBG.mp4?st=9cx3cMhluPEJQpsVXZxcTw&e=1679314864"
+  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/6f/6f4a/6f4a8883-39d9-47d5-ab8d-b1f071e76db1.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230321%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230321T163855Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=ee504e5e8d14f8ec521ea60deed47328b773f2d25721c8f7509c7f91d7a2862c"
+  movie_url: "https://de16.seedr.cc/ff_get/1473887238/Up.2009.PROPER.1080p.BluRay.H264.AAC-RARBG.mp4?st=oHoAJt9TPqerdcXDOtDPVg&e=1679503239"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Njëbrirëshi i fundit  - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Lart  - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
