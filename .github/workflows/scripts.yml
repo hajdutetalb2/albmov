@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/6f/6f4a/6f4a8883-39d9-47d5-ab8d-b1f071e76db1.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230321%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230321T163855Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=ee504e5e8d14f8ec521ea60deed47328b773f2d25721c8f7509c7f91d7a2862c"
-  movie_url: "https://de16.seedr.cc/ff_get/1473887238/Up.2009.PROPER.1080p.BluRay.H264.AAC-RARBG.mp4?st=oHoAJt9TPqerdcXDOtDPVg&e=1679503239"
+  audio_url: "https://s3.us-east-2.amazonaws.com/blob-us-east-2-qiudhp/sara/7f/7f08/7f08529d-50cc-4f32-b44b-d522bde8b427.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230325%2Fus-east-2%2Fs3%2Faws4_request&X-Amz-Date=20230325T102232Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=b3258cee068bf009e036508d229cf402de2e41f91b995e84bdfcb04ede91ff69"
+  movie_url: "https://nw9.seedr.cc/ff_get/1473994933/Homeward.Bound.The.Incredible.Journey.1993.1080p.WEBRip.x264-RARBG.mp4?st=d1fmDk2YkCw1srnZpV14tQ&e=1679826188"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Lart  - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Rruga drejt shtëpisë- Një udhëtim i pabesueshëm - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
