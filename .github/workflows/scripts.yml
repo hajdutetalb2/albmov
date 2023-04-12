@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/75/755d/755d6ac9-50cb-479e-840d-e241055b1ea9.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230408%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230408T114540Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=36418127a260dca2e1271a37662e424a4fd5ee400a573f375034e21da814a1a7"
-  movie_url: "https://rs1.seedr.cc/ff_get/1485265866/WALL-E.2008.1080p.BluRay.H264.AAC-RARBG.mp4?st=RQ6zdDzPS8HhjD9pDPOhgw&e=1681040700"
+  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/a7/a7e2/a7e2b121-740e-4e1f-bd3a-53eb9f21d5d9.bin?response-content-disposition=attachment%3B%20filename%3D%22finalh.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230412%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230412T163321Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=111e59f4d65a082f7afb885bdcc27369db345b9b42bc3cef8aa31e85e6d3450c"
+  movie_url: "https://nw10.seedr.cc/ff_get/1487881746/Home.On.The.Range.2004.1080p.BluRay.H264.AAC-RARBG.mp4?st=xsCAIQX7Kb51HKCODVxxLw&e=1681403748"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Uolli - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Shtëpia në fermë - Dubluar në Shqip (Dublimi i dytë) - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
@@ -73,12 +73,12 @@ jobs:
       
 
       # made to work for the RARBG x264 AAC version of WALL-E
-      - name: Download intro
-        run: wget -O "intro.mp4" "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/0b/0be8/0be893ad-8384-4fc8-8e22-30f3b69aacf2.bin?response-content-disposition=attachment%3B%20filename%3D%22intro3.mp4%22&response-content-type=video%2Fmp4&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230408%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230408T114833Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=44bb8a9b9b41b12e804c785b0103c16feb679bcf0490623223a2bee83610fd9b"
-      - name: Make list.txt
-        run: echo "file 'intro.mp4'" > list.txt && echo "file 'MOVIE.mp4'" >> list.txt
-      - name: Concat
-        run: ffmpeg -fflags +genpts -itsoffset -0.08 -f concat -safe 0 -i list.txt -vcodec copy -acodec copy -map_metadata -1 -movflags +faststart -max_interleave_delta 0 ENC.mp4 && mv ENC.mp4 MOVIE.mp4
+      # - name: Download intro
+      #   run: wget -O "intro.mp4" "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/0b/0be8/0be893ad-8384-4fc8-8e22-30f3b69aacf2.bin?response-content-disposition=attachment%3B%20filename%3D%22intro3.mp4%22&response-content-type=video%2Fmp4&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230408%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230408T114833Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=44bb8a9b9b41b12e804c785b0103c16feb679bcf0490623223a2bee83610fd9b"
+      # - name: Make list.txt
+      #   run: echo "file 'intro.mp4'" > list.txt && echo "file 'MOVIE.mp4'" >> list.txt
+      # - name: Concat
+      #   run: ffmpeg -fflags +genpts -itsoffset -0.08 -f concat -safe 0 -i list.txt -vcodec copy -acodec copy -map_metadata -1 -movflags +faststart -max_interleave_delta 0 ENC.mp4 && mv ENC.mp4 MOVIE.mp4
         
         
       # made to work for the RARBG x264 AAC version of Ratatouille
