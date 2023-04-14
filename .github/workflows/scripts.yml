@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/9b/9b45/9b4522e9-76ee-4b11-b377-d22b525522f2.bin?response-content-disposition=attachment%3B%20filename%3D%22finalsinbad.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230414%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230414T132103Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=a8422de0a2ec8297e668f239cceb38e614060848b16bac63e92b1b6aef56a888"
-  movie_url: "https://rs11.seedr.cc/ff_get/1488002714/Sinbad.Legend.of.the.Seven.Seas.2003.1080p.BluRay.H264.AAC-RARBG.mp4?st=Modn9085N5UceKRiplaeSg&e=1681565495"
+  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/61/6167/616724e3-8022-4fb0-adc4-ee6e37b0ba16.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230414%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230414T160017Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=86cc9eb4073e555b8bde3aab1cea6f1c244bb51323558a310029177f33e7f462"
+  movie_url: "https://de15.seedr.cc/ff_get/1489188173/DuckTales.The.Movie.Treasure.Of.The.Lost.Lamp.1990.1080p.WEBRip.x264.AAC-[YTS.LT].mp4?st=GfVVVvZGfBpScMeDPdyljg&e=1681574585"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Sinbad: Legjenda e shtatë detrave - Dubluar në Shqip (Dublimi i parë) - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Xhaxha Patoku dhe llampa magjike - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
