@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/61/6167/616724e3-8022-4fb0-adc4-ee6e37b0ba16.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230414%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230414T160017Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=86cc9eb4073e555b8bde3aab1cea6f1c244bb51323558a310029177f33e7f462"
-  movie_url: "https://de15.seedr.cc/ff_get/1489188173/DuckTales.The.Movie.Treasure.Of.The.Lost.Lamp.1990.1080p.WEBRip.x264.AAC-[YTS.LT].mp4?st=GfVVVvZGfBpScMeDPdyljg&e=1681574585"
+  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/94/9452/945212ca-4cfa-4c24-a3aa-dd6cb6ce18f9.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230423%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230423T101953Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=cf26530b0e4dd98ac93a780e2078c2483b209ed49cfd8ffa456cfda2c5356515"
+  movie_url: "https://nw16.seedr.cc/ff_get/1492908352/George.of.the.Jungle.2.2003.1080p.WEBRip.x264-RARBG.mp4?st=6h2PWeeNm-MqrECgRn3usA&e=1682331889"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Xhaxha Patoku dhe llampa magjike - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Xhorxh mbret i xhunglës 2 - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
