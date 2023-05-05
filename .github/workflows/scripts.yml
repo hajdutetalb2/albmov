@@ -5,7 +5,7 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/6d/6d79/6d791732-1702-44d6-b66d-770ce0e723d7.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230505%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230505T165005Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=03b20f47578e1bd8eff8eb381cdab20f029186f65162f070a44955a062625307"
+  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/6d/6d79/6d791732-1702-44d6-b66d-770ce0e723d7.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230505%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230505T172157Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=364d70ce6c8c677253f326d5be81e0c8f710fc49ecbb1344b06f25f4f2ae2a68"
   movie_url: "http://d271m1kdt8kptr.cloudfront.net/recs/netflix-Rango.mp4"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
@@ -49,13 +49,15 @@ jobs:
       #- name: mp4decrypt
       #  run: wget -O mp4 'http://catchup-tv.herokuapp.com/mp4decrypt' && chmod 777 mp4
 
+      - name: Download audio
+        #run: ./ytdlp --allow-u -f f2-a1-x3 'https://digitalb-vod.morescreens.com/cenc_vod_dash/M_Frozen_animacion_,480p,576p,.mp4.urlset/manifest.mpd?id=empty&video_id=12488&token=b52ea995905e05a6af8638eec07f7e9fccb28d60&authority_instance_id=spectar-prd-digitalb'
+        run: wget -O "$audio_name" "$audio_url"
+        
       - name: Download movie
         #run: ./ytdlp --allow-u -f f2-v1-x3 'https://digitalb-vod.morescreens.com/cenc_vod_dash/M_Frozen_animacion_,480p,576p,.mp4.urlset/manifest.mpd?id=empty&video_id=12488&token=b52ea995905e05a6af8638eec07f7e9fccb28d60&authority_instance_id=spectar-prd-digitalb'
         run: wget -O "$movie_name" "$movie_url" #$(curl https://vidoza.net/w7vi997d6oj2.html | grep "source src" | sed -e "s/        <source src=\"\(.*\)\" type='video\/mp4'>/\1/")
         
-      - name: Download audio
-        #run: ./ytdlp --allow-u -f f2-a1-x3 'https://digitalb-vod.morescreens.com/cenc_vod_dash/M_Frozen_animacion_,480p,576p,.mp4.urlset/manifest.mpd?id=empty&video_id=12488&token=b52ea995905e05a6af8638eec07f7e9fccb28d60&authority_instance_id=spectar-prd-digitalb'
-        run: wget -O "$audio_name" "$audio_url"
+
     
       #- name: decrypt
       #  run: ./mp4 --key e9c4370095004713baaff297322d9529:50372100d7a90ddc4766920450ea3bdb 'manifest [manifest].m4a' "$audio_name" && rm 'manifest [manifest].m4a'
