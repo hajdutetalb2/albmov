@@ -103,7 +103,7 @@ jobs:
      #   run: ffmpeg -i plparts/new.m3u8 -c copy EN2.mp4 && mv EN2.mp4 "$movie_name" && rm -rf plparts
       
       - name: Swap audio
-        run: ffmpeg -itsoffset -0.083416666 -i "$movie_name" -i "$audio_name" -vcodec copy -acodec copy -map_metadata -1 -movflags +faststart -map 0:v -map 1:a -to -to 1:47:16 "$result_name"
+        run: ffmpeg -itsoffset -0.083416666 -i "$movie_name" -i "$audio_name" -vcodec copy -acodec copy -map_metadata -1 -movflags +faststart -map 0:v -map 1:a -to 1:47:16 "$result_name"
         
       - name: Clean up
         run: rm "$movie_name" && rm "$audio_name"
