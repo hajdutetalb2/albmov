@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/6d/6d79/6d791732-1702-44d6-b66d-770ce0e723d7.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230505%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230505T172157Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=364d70ce6c8c677253f326d5be81e0c8f710fc49ecbb1344b06f25f4f2ae2a68"
-  movie_url: "http://d271m1kdt8kptr.cloudfront.net/recs/netflix-Rango.mp4"
+  audio_url: "https://catchup-tv.alwaysdata.net/final.m4a"
+  movie_url: "https://rs16.seedr.cc/ff_get/1509295646/Titan.A.E.2000.1080p.WEBRip.x264-RARBG.mp4?st=JMrzoE85o0EhoPLJ7RJRqg&e=1684417132"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Rango - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Titan A.E. - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
@@ -105,7 +105,7 @@ jobs:
      #   run: ffmpeg -i plparts/new.m3u8 -c copy EN2.mp4 && mv EN2.mp4 "$movie_name" && rm -rf plparts
       
       - name: Swap audio
-        run: ffmpeg -itsoffset -0.083416666 -i "$movie_name" -i "$audio_name" -vcodec copy -acodec copy -map_metadata -1 -movflags +faststart -map 0:v -map 1:a -to 1:47:16 "$result_name"
+        run: ffmpeg -i "$movie_name" -i "$audio_name" -vcodec copy -acodec copy -map_metadata -1 -movflags +faststart -map 0:v -map 1:a "$result_name"
         
       - name: Clean up
         run: rm "$movie_name" && rm "$audio_name"
