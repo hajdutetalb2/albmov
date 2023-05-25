@@ -6,7 +6,7 @@ on:
       
 env:
   audio_url: "https://catchup-tv.alwaysdata.net/final.m4a"
-  movie_url: "https://rs16.seedr.cc/ff_get/1509295646/Titan.A.E.2000.1080p.WEBRip.x264-RARBG.mp4?st=JMrzoE85o0EhoPLJ7RJRqg&e=1684417132"
+  movie_url: "https://de26.seedr.cc/ff_get/1532654761/A.Christmas.Carol.2009.1080p.BluRay.H264.AAC-RARBG.mp4?st=tWSHdPB4kfAbJhiRkzs4Eg&e=1685120944"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Titan A.E. - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Këngët e Krishtlindjeve - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
