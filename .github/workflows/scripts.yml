@@ -6,7 +6,7 @@ on:
       
 env:
   audio_url: "https://catchup-tv.alwaysdata.net/final.m4a"
-  movie_url: "https://de26.seedr.cc/ff_get/1532654761/A.Christmas.Carol.2009.1080p.BluRay.H264.AAC-RARBG.mp4?st=tWSHdPB4kfAbJhiRkzs4Eg&e=1685120944"
+  movie_url: "https://nw10.seedr.cc/ff_get/1534197216/A.Troll.in.Central.Park.1994.1080p.WEBRip.x264-RARBG.mp4?st=QZsqs0VeKR-uHtk_D1Qb-g&e=1685350107"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Këngët e Krishtlindjeve - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Një xhuxh në parkun qëndror - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
