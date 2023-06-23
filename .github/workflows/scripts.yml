@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/93/9374/9374f859-42f8-47b0-9899-4a39b7cd7312.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230623%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230623T172712Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=9656d48e34f1a135191835d7aed788d54ef951b7c5b9f53cb099f56b9572d42b"
-  movie_url: "https://rs7.seedr.cc/ff_get/1550723769/The.Wild.2006.1080p.BluRay.H264.AAC-RARBG.mp4?st=lT9ebE-hghCvBW2S4uPjBw&e=1687627662"
+  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/eb/ebbf/ebbf6181-647b-459e-9978-0e7a00cbbfcd.bin?response-content-disposition=attachment%3B%20filename%3D%22finalo.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230623%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230623T184514Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=e7da0c151c74106937b6b0fdf230de7e959502b0c0f2497ac65aad3d21cea4c2"
+  movie_url: "https://rs7.seedr.cc/ff_get/1550723769/The.Wild.2006.1080p.BluRay.H264.AAC-RARBG.mp4?st=q0xO9MjDjzxq7XHwNnneFA&e=1687632368"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Natyra e egër - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Xhungla - Dubluar në Shqip (Dublimi Onix) - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
