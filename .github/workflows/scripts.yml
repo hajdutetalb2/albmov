@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/a0/a029/a0293e5f-8865-4188-887c-f519e9872dc7.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230712%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230712T173752Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=fef86ce31ac00a05cddc3cac1cf43065c2ca7617b7174cd335cc5c32b41f53fb"
-  movie_url: "https://nw5.seedr.cc/ff_get/1560681290/Tale.of.Desperaux.2008.1080p.BrRip.x264.YIFY.mp4?st=MyNzmW1emAJ5apRyZnUHYA&e=1689269970"
+  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/76/76ca/76ca02f1-cad0-4165-bec9-9a02959183bb.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230715%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230715T162802Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=048f180ea3fa12453041664c15dc554bab3c2a0e0fe1b1ac654f4e52c5764ef3"
+  movie_url: "https://rs16.seedr.cc/ff_get/1563269777/The.Super.Mario.BrosMovie.2023.1080p.BluRay.x264.AAC5.1-[YTS.MX].mp4?st=wFp1JX5S9ja5wDofi35JNw&e=1689525407"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Rrëfenja e Desperosë - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Super Mario Bros: Filmi - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
