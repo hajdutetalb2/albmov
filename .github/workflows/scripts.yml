@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/2a/2a41/2a411683-f3d9-46b6-acd0-8dd2b96024ef.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230725%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230725T105122Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=13fa27dff4c4f0ba84edb7817d636c3219e9459ec82d6fe60389901a91838276"
-  movie_url: "https://de22.seedr.cc/ff_get/1567981914/Phineas.And.Ferb.The.Movie.Across.The.2nd.Dimension.2011.1080p.BluRay.x264-[YTS.AG].mp4?st=cvBNNRP5TD2JyuTCJeRifQ&e=1690369751"
+  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/c8/c80c/c80c6410-128a-4053-9b7e-b8b437da41b3.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230804%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230804T143024Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=de06aa05a3303d4c52184319288f166efdb4e114b0c1302a3beda89bd4705917"
+  movie_url: "https://nw4.seedr.cc/ff_get/1588520127/Lady.and.the.Tramp.1955.1080p.BluRay.H264.AAC-RARBG.mp4?st=VpgTXJJznlSZxleVPnL5Dg&e=1691245923"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Fines dhe Ferb në një dimension tjetër - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Lili dhe endacaku - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
