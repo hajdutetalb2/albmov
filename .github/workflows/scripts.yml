@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/c8/c80c/c80c6410-128a-4053-9b7e-b8b437da41b3.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230804%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230804T143024Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=de06aa05a3303d4c52184319288f166efdb4e114b0c1302a3beda89bd4705917"
-  movie_url: "https://nw4.seedr.cc/ff_get/1588520127/Lady.and.the.Tramp.1955.1080p.BluRay.H264.AAC-RARBG.mp4?st=VpgTXJJznlSZxleVPnL5Dg&e=1691245923"
+  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/66/6633/6633f90c-c349-4ae5-9185-32263ee95f7c.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230806%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230806T143743Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=0900b1623b9d15f4f474464f67239d39ecbcb2ef8403cb29fb68cfd8549beeb3"
+  movie_url: "https://uc1142f96cedc4eec6083b409aaa.dl.dropboxusercontent.com/cd/0/get/CBTOZjfbKRXpUvpH546FKfnM7KgGUio01hQIVoqNXSdgQJ-Dz7rQlmvVxoXd7eDAckqrqQYvhsFmp5nfTyHWVn6KPN19BA4nbWkhGy2w08rN2xMjtOQapoSLZWXw-bl3C5JY3XYPlPEFzVg1nKQu2D93g3SrjegK0UpS_-S9bhVTZA/file"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Lili dhe endacaku - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Sirena e vogël 3 - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
