@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/90/9009/90097a64-0f8d-4830-98a3-9a421296d38d.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230813%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230813T155309Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=79d1e9627f8eaf6f55eea5862541f6562baef074949409dd1a9137a62a8fe086"
-  movie_url: "https://de22.seedr.cc/ff_get/1613007479/Shrek.2001.1080p.BluRay.H264.AAC-RARBG.mp4?st=hqGlxASCWZ1oMDfMIFsptw&e=1692028420"
+  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/78/78de/78de0570-d72a-423c-bd99-21701ee21b13.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230816%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230816T132817Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=28a951d386d27c6de2813dc20df6903589ffac8ce2870f7d2b452cdcaa1aeeb8"
+  movie_url: "https://de20.seedr.cc/ff_get/1615291519/Tom.And.Jerry.The.Movie.1992.1080p.WEBRip.x264.AAC-[YTS.MX].mp4?st=kTxrEfQgIyd-BvlC_YlrCQ&e=1692278882"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Shrek - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Tomi dhe Xherri në film - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
