@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/88/8819/88197cd3-e87b-4c1a-bbfe-c98298b38f98.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230829%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230829T133247Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=7bb452652a6620d5cc3eaf62daede06b9d4ddb1538fe7e3290c532303274f565"
-  movie_url: "https://de13.seedr.cc/ff_get/1622769294/Nacho.Libre.2006.1080p.BluRay.H264.AAC-RARBG.mp4?st=gysHnVecL4GGU0d44fKV2g&e=1693402488"
+  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/ac/ac45/ac45900c-e686-494d-9425-539624733a57.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230830%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230830T155918Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=8f882d0f1a7dea76a890c2270a228484c7b6b03714e8d86e0f8587a842674519"
+  movie_url: "https://de20.seedr.cc/ff_get/1623833203/Spider-Man.Into.the.Spider-Verse.2018.1080p.BluRay.H264.AAC-RARBG.mp4?st=VecUe9lTUMRrFR8gT5egxA&e=1693497628"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Naço luftëtari - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Njeriu-Merimangë: Universi i ri - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
