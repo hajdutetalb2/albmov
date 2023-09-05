@@ -6,7 +6,7 @@ on:
       
 env:
   audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/dc/dce8/dce878c0-bb51-4c66-bf98-f6175983a12b.bin?response-content-disposition=attachment%3B%20filename%3D%22final2.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230905%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230905T102602Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=c6482e9eae94f8a1d59fd1c76476738ac17126128cf6ad1159c0d948ceb1b168"
-  movie_url: "http://d271m1kdt8kptr.cloudfront.net/recs/ANTZ.mp4"
+  movie_url: "http://hajdutialb:Hajdutet2023@d271m1kdt8kptr.cloudfront.net/recs/ANTZ.mp4"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
