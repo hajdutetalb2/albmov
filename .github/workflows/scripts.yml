@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/dc/dce8/dce878c0-bb51-4c66-bf98-f6175983a12b.bin?response-content-disposition=attachment%3B%20filename%3D%22final2.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230904%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230904T212216Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=bee2cea74c7808ee4ddaf9a71bb9c20a65612542c17f0d5fce35e8f710ed4625"
-  movie_url: "https://rs12.seedr.cc/ff_get/1626261935/Antz.1998.1080p.BluRay.x265-RARBG.mp4?st=-YM9nbC83fU5e1P0J5t9yw&e=1693948750"
+  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/dc/dce8/dce878c0-bb51-4c66-bf98-f6175983a12b.bin?response-content-disposition=attachment%3B%20filename%3D%22final2.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230905%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230905T102602Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=c6482e9eae94f8a1d59fd1c76476738ac17126128cf6ad1159c0d948ceb1b168"
+  movie_url: "http://d271m1kdt8kptr.cloudfront.net/recs/ANTZ.mp4"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Milingona Z - Dubluar në Shqip - FULL HD (HEVC).mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Milingona Z - Dubluar në Shqip - FULL HD (H264).mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
@@ -105,7 +105,7 @@ jobs:
      #   run: ffmpeg -i plparts/new.m3u8 -c copy EN2.mp4 && mv EN2.mp4 "$movie_name" && rm -rf plparts
       
       - name: Swap audio
-        run: ffmpeg -i "$movie_name" -i "$audio_name" -vcodec copy -acodec copy -map_metadata -1 -movflags +faststart -map 0:v -map 1:a -tag:v hvc1 "$result_name"
+        run: ffmpeg -i "$movie_name" -i "$audio_name" -vcodec copy -acodec copy -map_metadata -1 -movflags +faststart -map 0:v -map 1:a "$result_name" # -tag:v hvc1
         
       - name: Clean up
         run: rm "$movie_name" && rm "$audio_name"
