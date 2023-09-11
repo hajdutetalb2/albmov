@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/30/30ac/30ac0aa1-7d87-40c6-9141-40c3f8e737b6.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230910%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230910T201713Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=0c99752f558311d8176b604cfc11a23f5055db63767403b9fdc692dcea5fc2ec"
-  movie_url: "https://nw16.seedr.cc/ff_get/1629247345/Monsters.Inc.2001.PROPER.1080p.BluRay.H264.AAC-RARBG.mp4?st=yGlG0fmSOByHWI65ebXzdw&e=1694463635"
+  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/13/1392/13927354-a8f4-4a2d-95ca-fd06149820f4.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230911%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230911T103039Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=db990265752c858cb5e8b178c9f4767714a48b919615897f109b2e66abff205c"
+  movie_url: "https://nw16.seedr.cc/ff_get/1629247345/Monsters.Inc.2001.PROPER.1080p.BluRay.H264.AAC-RARBG.mp4?st=ILs_qEBUCFQPi4Ff8Rv4nA&e=1694515013"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Përbindëshat - Dubluar në Shqip (Dublimi Albatrade) - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Përbindëshat - Dubluar në Shqip (Dublimi Jess) - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
