@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/13/1392/13927354-a8f4-4a2d-95ca-fd06149820f4.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230911%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230911T103039Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=db990265752c858cb5e8b178c9f4767714a48b919615897f109b2e66abff205c"
-  movie_url: "https://nw16.seedr.cc/ff_get/1629247345/Monsters.Inc.2001.PROPER.1080p.BluRay.H264.AAC-RARBG.mp4?st=ILs_qEBUCFQPi4Ff8Rv4nA&e=1694515013"
+  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/de/de12/de122285-9686-4ea1-b544-0cfb67ac8907.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230917%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230917T153814Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=da56ff701c4d956447a8f7559f654c1fe18570f5346fec445cd0c6162dc0cf2c"
+  movie_url: "http://hajdutialb:Hajdutet2023@d271m1kdt8kptr.cloudfront.net/recs/torrents/Spider-Man.Across.the.Spider-Verse.2023.1080p.MA.WEB.Dual.YG/Spider-Man.Across.the.Spider-Verse.2023.1080p.MA.WEB-DL.x265.10Bit.DD+5.1.Dual.YG.mkv"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Përbindëshat - Dubluar në Shqip (Dublimi Jess) - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Njeriu-Merimangë: Përmes multiversit - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
@@ -105,7 +105,7 @@ jobs:
      #   run: ffmpeg -i plparts/new.m3u8 -c copy EN2.mp4 && mv EN2.mp4 "$movie_name" && rm -rf plparts
       
       - name: Swap audio
-        run: ffmpeg -i "$movie_name" -i "$audio_name" -vcodec copy -acodec copy -map_metadata -1 -movflags +faststart -map 0:v -map 1:a "$result_name" # -tag:v hvc1
+        run: ffmpeg -i "$movie_name" -i "$audio_name" -vcodec copy -acodec copy -map_metadata -1 -movflags +faststart -map 0:v -map 1:a -tag:v hvc1 "$result_name" # -tag:v hvc1
         
       - name: Clean up
         run: rm "$movie_name" && rm "$audio_name"
