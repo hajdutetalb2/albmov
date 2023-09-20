@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/de/de12/de122285-9686-4ea1-b544-0cfb67ac8907.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230917%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230917T162145Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=7bae711fe95b7e248b100261f62b890f392ab66371bcbd709979231bd18e4e09"
-  movie_url: "https://nw12.seedr.cc/ff_get/1632883709/Spider-Man.Across.The.Spider-Verse.2023.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4?st=48VwmhO7qOSuiPIbHSG27Q&e=1695053892"
+  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/46/4671/46719e1e-55b3-4e46-9495-3f1a7aee938e.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230920%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230920T115003Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=91aba160b9bc80a4f9c32af153137704709d8ba5b5cca8763483d638c738cd60"
+  movie_url: "https://uc58d1d6f86c6c3492cfcbd6a0f5.dl.dropboxusercontent.com/cd/0/get/CEG8vRV_fsopCoqVM5JwA_kHJFk-2DgBqEPmNOOs75SJgKelzANZr4A-cjDU5tF81C8BFodeFwFEolx5PDs3oSRNTAb1BHC3_vOm0Bmz37OTVhg4A4HMttKfwY0fPjuShioTHsrrxhBzkZUbRUl-trycd-Jjbkoda17xUldRleGuJA/file"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Njeriu-Merimangë: Përmes multiversit - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Njeriu-Merimangë: Përmes multiversit - Dubluar në Shqip (HEVC) - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
@@ -105,7 +105,7 @@ jobs:
      #   run: ffmpeg -i plparts/new.m3u8 -c copy EN2.mp4 && mv EN2.mp4 "$movie_name" && rm -rf plparts
       
       - name: Swap audio
-        run: ffmpeg -i "$movie_name" -i "$audio_name" -vcodec copy -acodec copy -map_metadata -1 -movflags +faststart -map 0:v -map 1:a "$result_name" # -tag:v hvc1
+        run: ffmpeg -i "$movie_name" -i "$audio_name" -vcodec copy -acodec copy -map_metadata -1 -movflags +faststart -map 0:v -map 1:a -tag:v hvc1 "$result_name" # -tag:v hvc1
         
       - name: Clean up
         run: rm "$movie_name" && rm "$audio_name"
