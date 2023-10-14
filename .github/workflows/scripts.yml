@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/25/2541/2541041a-4e4c-496a-9fa1-34d53b80f859.bin?response-content-disposition=attachment%3B%20filename%3D%22final2.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20230928%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20230928T104055Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=9986405843dfe80f78063731050811064b3b74722515b234279824d6762b19d3"
-  movie_url: "https://nw13.seedr.cc/ff_get/1637612501/Balto.1995.1080p.BluRay.H264.AAC-RARBG.mp4?st=d8Dflq0NxqyaxIHEmxthuQ&e=1695984216"
+  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/e3/e369/e369ba1a-06cc-4c00-af96-6448dae69d91.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20231014%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20231014T182420Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=0c26b9d77128c0692666b41e76f94b22f71c57b5caf8b965d6d74cfeb61d28c9"
+  movie_url: "https://nw15.seedr.cc/ff_get/1646350998/Harry.Potter.And.The.Prisoner.Of.Azkaban.2004.1080p.BluRay.x265-RARBG.mp4?st=YSekIFrkpcs0k0vXp1oFJw&e=1697394282"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Balto - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Herri Poter dhe i burgosuri i Azkabanit - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
@@ -105,7 +105,7 @@ jobs:
      #   run: ffmpeg -i plparts/new.m3u8 -c copy EN2.mp4 && mv EN2.mp4 "$movie_name" && rm -rf plparts
       
       - name: Swap audio
-        run: ffmpeg -i "$movie_name" -i "$audio_name" -vcodec copy -acodec copy -map_metadata -1 -movflags +faststart -map 0:v -map 1:a "$result_name" # -tag:v hvc1
+        run: ffmpeg -i "$movie_name" -i "$audio_name" -vcodec copy -acodec copy -map_metadata -1 -movflags +faststart -map 0:v -map 1:a -tag:v hvc1 "$result_name" # -tag:v hvc1
         
       - name: Clean up
         run: rm "$movie_name" && rm "$audio_name"
