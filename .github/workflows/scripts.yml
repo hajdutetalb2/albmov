@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/e3/e369/e369ba1a-06cc-4c00-af96-6448dae69d91.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20231014%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20231014T182420Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=0c26b9d77128c0692666b41e76f94b22f71c57b5caf8b965d6d74cfeb61d28c9"
-  movie_url: "https://nw15.seedr.cc/ff_get/1646350998/Harry.Potter.And.The.Prisoner.Of.Azkaban.2004.1080p.BluRay.x265-RARBG.mp4?st=YSekIFrkpcs0k0vXp1oFJw&e=1697394282"
+  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/bd/bd34/bd34500e-9ed4-4e76-ad58-bb52d92bd664.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20231019%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T215039Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=e4737727f9686be6b3e01ec20dbd6a481ca4758be42860e550ef1d989c75c33e"
+  movie_url: "https://de19.seedr.cc/ff_get/1649735197/Harry.Potter.and.the.Goblet.of.Fire.2005.1080p.BluRay.x265-RARBG.mp4?st=aGYGM7S-o4rU6Yd-rU3Lyg&e=1697838718"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Herri Poter dhe i burgosuri i Azkabanit - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Herri Poter dhe kupa e zjarrtë - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
