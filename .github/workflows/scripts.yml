@@ -6,7 +6,7 @@ on:
       
 env:
   audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/cc/cca3/cca3b77d-fd18-4c38-a14b-91a19cd46d06.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20231021%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20231021T102449Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=f622c5ea8c01525105c0f917a62e0e9d8ea3b40281c8ee88fb73fd8a0c94eb55"
-  movie_url: "https://ucd17b6547261cdc956886524f45.dl.dropboxusercontent.com/cd/0/get/CGCNVzaFNTQes2DzZBub-jwc6qu2eIXowfS6LnYX0lGi7p8KDI7Y2B_zywA8MWKCJZEBcEKfcrGGDgHwaGpGkCSX5K7Com6r_v1kpYMmjWxjgfubehP-7QBFONF1KRg6fEZgW00lneqRhfTQiVRQC2R89c7eHJMIGKps0jGW8dppNA/file"
+  movie_url: "https://uc440da3e3bb1783f46c51b441cf.dl.dropboxusercontent.com/cd/0/get/CGDatgplqhbw27VhVv7W78FZJ74KO2_ODEcxyMpBhPXEd18BG8_GJXNM9Ofjc7NjAVlon-BaJbJxRrhnY2sw472dpP5U1w29MX0R5P7vEsFjrqLXT2duWWb8deSvWt3DOHS82sI5wRxEmSjv_EQXaUi3mvxIF9VVVoYXDLiaPoGiaA/file"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
