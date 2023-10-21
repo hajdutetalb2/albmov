@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/bd/bd34/bd34500e-9ed4-4e76-ad58-bb52d92bd664.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20231019%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20231019T215039Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=e4737727f9686be6b3e01ec20dbd6a481ca4758be42860e550ef1d989c75c33e"
-  movie_url: "https://de19.seedr.cc/ff_get/1649735197/Harry.Potter.and.the.Goblet.of.Fire.2005.1080p.BluRay.x265-RARBG.mp4?st=aGYGM7S-o4rU6Yd-rU3Lyg&e=1697838718"
+  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/cc/cca3/cca3b77d-fd18-4c38-a14b-91a19cd46d06.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20231021%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20231021T102449Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=f622c5ea8c01525105c0f917a62e0e9d8ea3b40281c8ee88fb73fd8a0c94eb55"
+  movie_url: "https://ucd17b6547261cdc956886524f45.dl.dropboxusercontent.com/cd/0/get/CGCNVzaFNTQes2DzZBub-jwc6qu2eIXowfS6LnYX0lGi7p8KDI7Y2B_zywA8MWKCJZEBcEKfcrGGDgHwaGpGkCSX5K7Com6r_v1kpYMmjWxjgfubehP-7QBFONF1KRg6fEZgW00lneqRhfTQiVRQC2R89c7eHJMIGKps0jGW8dppNA/file"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Herri Poter dhe kupa e zjarrtë - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Njeriu-Merimangë: Përmes multiversit - Dubluar në Shqip (Dublimi Suprem, HEVC) - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
