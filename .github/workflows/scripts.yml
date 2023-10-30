@@ -5,7 +5,7 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/85/8510/8510df59-975d-4d7c-883d-14e5192b4c19.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20231028%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20231028T192028Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=8cf878c54846db77682ff7a11f8523212d1170a2a43b3550f40cdefc13466ea4"
+  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/4e/4ef8/4ef8d52d-8939-41d8-a0ff-2ca1fbea1cd1.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20231030%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20231030T211641Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=5502230c3b1eb456570584af8a56ecaabd37ee553966c66ef77ed0706260fdcb"
   movie_url: "https://nw17.seedr.cc/ff_get/1653975680/Poohs.Heffalump.Halloween.Movie.2005.1080p.WEBRip.x264.AAC5.1-[YTS.MX].mp4?st=GJBZVsLW7NuWXrZS-Z442w&e=1698608606"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Shfaqja e maskave për arushin Puh - Dubluar në Shqip (H264) - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Bongo dhe tre aventurierët - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
@@ -55,7 +55,7 @@ jobs:
         
       - name: Download movie
         #run: ./ytdlp --allow-u -f f2-v1-x3 'https://digitalb-vod.morescreens.com/cenc_vod_dash/M_Frozen_animacion_,480p,576p,.mp4.urlset/manifest.mpd?id=empty&video_id=12488&token=b52ea995905e05a6af8638eec07f7e9fccb28d60&authority_instance_id=spectar-prd-digitalb'
-        run: wget -O "$movie_name" "$movie_url" #$(curl https://vidoza.net/v7zj0b8utoib.html | grep "source src" | sed -e "s/        <source src=\"\(.*\)\" type='video\/mp4'>/\1/")
+        run: wget -O "$movie_name" $(curl https://vidoza.net/vvrfupsoqtpo.html | grep "source src" | sed -e "s/        <source src=\"\(.*\)\" type='video\/mp4'>/\1/")
         
 
     
