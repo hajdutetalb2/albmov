@@ -5,8 +5,8 @@ on:
       - main
       
 env:
-  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/4e/4ef8/4ef8d52d-8939-41d8-a0ff-2ca1fbea1cd1.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20231030%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20231030T211641Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=5502230c3b1eb456570584af8a56ecaabd37ee553966c66ef77ed0706260fdcb"
-  movie_url: "https://rs7.seedr.cc/ff_get/1654983991/Fun.And.Fancy.Free.1947.1080p.BluRay.x264.AAC5.1-[YTS.MX].mp4?st=73hnXCLUKU-BztIhoPHDng&e=1698787612"
+  audio_url: "https://s3.eu-central-1.amazonaws.com/blob-eu-central-1-nwsekq/sara/87/8731/8731f55f-8d2e-4c22-aaab-d615117668b0.bin?response-content-disposition=attachment%3B%20filename%3D%22final.m4a%22&response-content-type=audio%2Fx-m4a&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIA4DM2EY46SOWUMUP4%2F20231105%2Feu-central-1%2Fs3%2Faws4_request&X-Amz-Date=20231105T181728Z&X-Amz-SignedHeaders=host&X-Amz-Expires=1800&X-Amz-Signature=2a72df1a9593c9801fa9abe7ea8c14b21b327e84bd2379f9e0b5079aa1e4ed28"
+  movie_url: "https://rs19.seedr.cc/ff_get/1657100998/The.Many.Adventures.of.Winnie.the.Pooh.1977.1080p.BluRay.H264.AAC-RARBG.mp4?st=YduJKMLSgoV68Aeipe_g5A&e=1699294832"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Bongo dhe tre aventurierët - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Aventurat e shumta të Uini Puh - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
