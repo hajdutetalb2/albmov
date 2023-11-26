@@ -6,7 +6,7 @@ on:
       
 env:
   audio_url: "http://hajdutialb:Hajdutet2023@d271m1kdt8kptr.cloudfront.net/recs/final.m4a"
-  movie_url: "https://de20.seedr.cc/ff_get/1667409055/Garfield.2004.1080p.BluRay.x264-[YTS.AG].mp4?st=Q6ZRof843w8EkM678SVyqg&e=1701023380"
+  movie_url: "https://nw13.seedr.cc/ff_get/1667864638/Piglets.Big.Movie.2003.1080p.BluRay.x264-[YTS.LT].mp4?st=dhmRdIgbK6k4TNURmMxzPA&e=1701103454"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Garfildi - Dubluar në Shqip (HEVC) - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Historia e Derrkucit - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
