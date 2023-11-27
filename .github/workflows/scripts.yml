@@ -6,7 +6,7 @@ on:
       
 env:
   audio_url: "http://hajdutialb:Hajdutet2023@d271m1kdt8kptr.cloudfront.net/recs/final.m4a"
-  movie_url: "https://de22.seedr.cc/ff_get/1667887138/The.Fox.and.the.Hound.1981.1080p.BluRay.x265-RARBG.mp4?st=gYJe-zPH7l0ZUzOBzGhirw&e=1701191758"
+  movie_url: "https://1xmcgre8ic3kpmjnhktyyx9rn6k02d8nravehb4croki3djrmu.ctmp.online/files/3/uhepy2vwmgrqvl/Dhelpra%20dhe%20zagari%20-%20Dubluar%20n%3F%20Shqip%20-%20FULL%20HD.mp4"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
   result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
@@ -20,7 +20,7 @@ env:
   h8a: "Dropbox-API-Arg: {\"cursor\": {\"session_id\": \""
   h8b: "\",\"offset\": "
   h8c: "},\"close\": false}"
-  h9: "},\"commit\": {\"path\": \"/Dhelpra dhe zagari - Dubluar në Shqip (AI REMASTER; HEVC)- FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
+  h9: "},\"commit\": {\"path\": \"/Dhelpra dhe zagari - Dubluar në Shqip (AI REMASTER; H264)- FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
   
   
