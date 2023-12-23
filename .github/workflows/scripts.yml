@@ -34,7 +34,7 @@ jobs:
       #  uses: mxschmitt/action-tmate@v3
       
       - name: ffmpeg
-        uses: FedericoCarboni/setup-ffmpeg@v1
+        uses: FedericoCarboni/setup-ffmpeg@v2
         id: setup-ffmpeg
         
       - name: SSH
