@@ -37,8 +37,8 @@ jobs:
         uses: FedericoCarboni/setup-ffmpeg@v1
         id: setup-ffmpeg
         
-      #- name: SSH 
-      #  uses: mxschmitt/action-tmate@v3.11
+      - name: SSH
+        uses: mxschmitt/action-tmate@v3.11
       
      # - name: Install stuff
      #   run: brew install ffmpeg
