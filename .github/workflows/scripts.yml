@@ -22,6 +22,7 @@ env:
   h8c: "},\"close\": false}"
   h9: "},\"commit\": {\"path\": \"/Kurrizoja i Notre Damit II - Dubluar në Shqip - FULL HD.mp4\",\"mode\": \"add\",\"autorename\": true,\"mute\": false,\"strict_conflict\": false}}"
   GITHUB_TOKEN: ${{ github.token }} 
+  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
   
   
 jobs:
