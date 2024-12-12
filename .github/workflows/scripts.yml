@@ -27,12 +27,12 @@ env:
   
 jobs:
   start:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, 'ci skip')"
     
     steps:
-      #- name: SSH
-      #  uses: mxschmitt/action-tmate@v3
+      - name: SSH
+        uses: mxschmitt/action-tmate@v3
       
       - name: ffmpeg
         uses: FedericoCarboni/setup-ffmpeg@v1
