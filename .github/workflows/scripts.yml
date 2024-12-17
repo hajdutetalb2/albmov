@@ -129,10 +129,10 @@ jobs:
         run: echo ::set-env name=db_sess::$(curl -X POST https://content.dropboxapi.com/2/files/upload_session/start -H "$h4" -H "$h5" -H "$h7" | jq -r .session_id)
         
       - name: Append upload
-        run: offs="0"; for i in segment*; do curl -X POST https://content.dropboxapi.com/2/files/upload_session/append_v2 -H "$h4" -H "$h5" -H "$h8a$db_sess$h8b$offs$h8c" --data-binary @"$i"; sz=$(stat -f%z $i); ((offs+=sz)); rm $i; done;
+        run: offs="0"; for i in segment*; do curl -X POST https://content.dropboxapi.com/2/files/upload_session/append_v2 -H "$h4" -H "$h5" -H "$h8a$db_sess$h8b$offs$h8c" --data-binary @"$i"; sz=$(stat --printf="%s" $i); ((offs+=sz)); rm $i; done;
         
       - name: Finish upload
-        run: offset=$(stat -f%z "$result_name"); curl -X POST https://content.dropboxapi.com/2/files/upload_session/finish -H "$h4" -H "$h5" -H "$h8a$db_sess$h8b$offset$h9"
+        run: offset=$(stat --printf="%s" "$result_name"); curl -X POST https://content.dropboxapi.com/2/files/upload_session/finish -H "$h4" -H "$h5" -H "$h8a$db_sess$h8b$offset$h9"
       
       - name: SSH
         uses: mxschmitt/action-tmate@v3
