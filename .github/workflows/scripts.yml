@@ -6,10 +6,10 @@ on:
       
 env:
   audio_url: "https://edge-001.animeshqip.com/finalet.m4a"
-  movie_url: "https://rs20.seedr.cc/ff_get/5557570503/E.T.%20L_extra-terrestre%20-%20the%20Extra-Terrestrial%20(1982)%20AC3%205.1%20ITA.ENG%201080p%20H265%20sub%20ita%20Sp33dy94-MIRCrew.mkv?st=jaNUCgraxGBYnHvp6TarFA&e=1734539909"
+  movie_url: "https://rs20.seedr.cc/ff_get/5557570503/E.T.%20L_extra-terrestre%20-%20the%20Extra-Terrestrial%20(1982)%20AC3%205.1%20ITA.ENG%201080p%20H265%20sub%20ita%20Sp33dy94-MIRCrew.mkv?st=YFQkAfz0yWSnDdpbqN-n-Q&e=1734623154"
   movie_name: "MOVIE.mp4"
   audio_name: "AUDIO.m4a"
-  result_name: "Movie - Dubluar në Shqip - FULL HD.mp4"
+  result_name: "Jashtëtokësori - Dubluar në Shqip - FULL HD.mp4"
   h1: 'Accept: application/json'
   h2: "Authorization: Bearer ${{ secrets.VIDOZA_KEY }}" # vidoza
   h3: 'cache-control: no-cache'
